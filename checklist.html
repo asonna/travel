@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.1.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title>Travel Planning</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>TRAVEL PLANNING</h1>
+      </div>
+
+      <div class="row" id="output">
+        <p>Your travel packing checklist for: </p>
+        <ul>
+          <li>Adult</li>
+          <li>Canada</li>
+          <li>Plane</li>
+          <li>Hotel</li>
+          <li>Sightseeing</li>
+        </ul>
+      </div><br><br>
+
+      <button type="button" class="btn-primary" id="checklist">Generate checklist</button><br><br>
+
+      <div class="row">
+        <div class="col-sm-4" id="travelPrepCheck">
+         <label><h4>Travel Preparation: </h4></label>
+           <div class="multiselect">
+              <label><input type="checkbox" class="default" value=""/> Renew/check passport</label><br>
+              <label><input type="checkbox" class="default" value=""/> Advise bank of future foreign credit card use</label><br>
+              <label><input type="checkbox" class="default" value=""/> Leave itineraries with a relative</label><br>
+              <label><input type="checkbox" class="default" value=""/> Setup auto e-mail response</label><br>
+              <label><input type="checkbox" class="default" value=""/> Buy/recharge phone card/VOIP account</label><br>
+              <label><input type="checkbox" class="default" value=""/> Insurance: Trip cancellation/medical</label><br>
+              <label><input type="checkbox" class="default" value=""/> Change money</label><br>
+              <label><input type="checkbox" class="default" value=""/> Check local destination weather/news</label><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
