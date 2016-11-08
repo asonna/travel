@@ -1,0 +1,10 @@
+#output, #travelPrepCheck, #homePrepCheck, #vaccCheck {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: auto;
+  background-color: white;
+  margin-right: 50px;
+}
+.multiselect, .optionalPlane {
+  display: none;
+}
