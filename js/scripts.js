@@ -16,7 +16,6 @@ Traveler.prototype.travelerList = function() {
   for(var i = 0; i < this.travelerUser.length; i++) {
     travelerList += "<li>" + this.travelerUser[i]+ "</li>";
   }
-console.log(travelerList);
 }
 
 
@@ -40,7 +39,7 @@ $(document).ready(function() {
 
     newTraveler.travelerList();
 
-    console.log(newTraveler);
+
     $(".output").show();
     $(".list-who").append(travelerList);
     $(".list-where").text(newTraveler.travelPlace);
@@ -49,4 +48,14 @@ $(document).ready(function() {
     $(".list-activities").text(newTraveler.travelAct);
   });
 
+  //move to checklist.html page
+  $("button#to-next-page").click(function(event) {
+    event.preventDefault();
+
+    window.location.href="https://www.google.com/";
+    return false;
+
+  
+
+  })
 });
