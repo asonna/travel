@@ -2,58 +2,51 @@
 // begin business logic
 
 
-function Traveler(travelPlace, traveler, travelMode, travelAccom, travelAct) {
+function Traveler(travelPlace, travelMode, travelAccom, travelAct, traveler) {
   this.travelPlace = travelPlace;
-  this.travelerUser = traveler;
   this.travelMode = travelMode;
   this.travelAccom = travelAccom;
   this.travelAct = travelAct;
+  this.travelerUser = [];
 }
 
+var travelerList = "";
 
-// Traveler.prototype.userInput() = function() {
-//
-// }
-
+Traveler.prototype.travelerList = function() {
+  for(var i = 0; i < this.travelerUser.length; i++) {
+    travelerList += "<li>" + this.travelerUser[i]+ "</li>";
+  }
+console.log(travelerList);
+}
 
 
 // Front End
 
 $(document).ready(function() {
-  $("button.disable").prop("disabled", true);
-  $(document).on("click", ":submit", function(e) {
-    var where = $(".where option").val();
-    // var who = $(".who button").val()
-    var how = $(".how button").val();
-    var staying = $(".staying button").val();
-    var activities = $(".activities button").val();
-    var who = $("button#adult").val();
-    // var how = $(this).val();
-    // var staying = $(this).val();
-    // var activities = $(this).val();
+  $("form#userTravelType").submit(function(event){
+    event.preventDefault();
+    var who = $('#who input:checkbox:checked').val();
+    var where = $('#where').val();
+    var how = $('#how input:radio:checked').val();
+    var staying = $('#staying input:radio:checked').val();
+    var activities = $('#activities input:radio:checked').val();
 
-    // var how = $("button#adult").val();
-    // var staying = $("button#adult").val();
-    // var activities = $("button#adult").val();
-    //
-    var newTraveler = new Traveler(where, who, how, staying, activities);
+    var newTraveler = new Traveler(where, how, staying, activities);
 
-    // $("button").each(function() {
-    //   var how = $(this).val();
-    //   newTraveler.travelerMode.push(how);
-    // });
-    //
-    // $("button").each(function() {
-    //   var staying = $(this).val();
-    //   newTraveler.travelerAccom.push(staying);
-    // });
-    //
-    // $("button").val().each(function() {
-    //   var activities = $(this).val();
-    //   newTraveler.travelAct.push(activities);
-    // });
+    $('#who input:checkbox:checked').each(function() {
+      who = $(this).val();
+      newTraveler.travelerUser.push(who);
+    });
+
+    newTraveler.travelerList();
+
     console.log(newTraveler);
-    $("ul.output-list").append("<li>" + newTraveler.travelerUser + "</li>" + "<li>" + newTraveler.travelPlace + "</li>" + "<li>" + newTraveler.travelMode + "</li>" + "<li>" + newTraveler.travelAccom + "</li>" + "<li>" + newTraveler.travelAct + "</li>");
+    $(".output").show();
+    $(".list-who").append(travelerList);
+    $(".list-where").text(newTraveler.travelPlace);
+    $(".list-how").text(newTraveler.travelMode);
+    $(".list-staying").text(newTraveler.travelAccom);
+    $(".list-activities").text(newTraveler.travelAct);
   });
 
 });
