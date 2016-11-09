@@ -297,19 +297,19 @@
               <h4>How will you be travelling?</h4>
               <div class="btn-group" id="how" data-toggle="buttons">
                 <label class="btn btn-default blue">
-                  <input type="radio" class="toggle" value="Plane">Plane
+                  <input type="radio" name="mode" value="Plane">Plane
                 </label>
                 <label class="btn btn-default blue">
-                  <input type="radio" class="toggle" value="Train">Train
+                  <input type="radio" name="mode" value="Train">Train
                 </label>
                 <label class="btn btn-default blue">
-                  <input type="radio" class="toggle" value="Train">Boat
+                  <input type="radio" name="mode" value="Boat">Boat
                 </label>
                 <label class="btn btn-default blue">
-                  <input type="radio" class="toggle" value="Train">Car
+                  <input type="radio" name="mode" value="Car">Car
                 </label>
                 <label class="btn btn-default blue">
-                  <input type="radio" class="toggle" value="Train">Bus
+                  <input type="radio" name="mode" value="Bus">Bus
                 </label>
               </div>
             </div>
@@ -319,16 +319,16 @@
               <h4>Where will you be staying?</h4>
               <div class="btn-group" id="staying" data-toggle="buttons">
                 <label class="btn btn-default blue">
-                  <input type="radio" class="toggle" value="Hotel">Hotel
+                  <input type="radio" name="accommodation" value="Hotel">Hotel
                 </label>
                 <label class="btn btn-default blue">
-                  <input type="radio" class="toggle" value="Hostel/Guesthouse">Hostel/GuestHouse
+                  <input type="radio" name="accommodation" value="Hostel/Guesthouse">Hostel/GuestHouse
                 </label>
                 <label class="btn btn-default blue">
-                  <input type="radio" class="toggle" value="Camping">Camping
+                  <input type="radio" name="accommodation" value="Camping">Camping
                 </label>
                 <label class="btn btn-default blue">
-                  <input type="radio" class="toggle" value="Friends/Relatives">Friends/Relatives
+                  <input type="radio" name="accommodation" value="Friends/Relatives">Friends/Relatives
                 </label>
               </div>
             </div>
@@ -338,16 +338,16 @@
               <h4>Planned activities</h4>
               <div class="btn-group" id="activities" data-toggle="buttons">
                 <label class="btn btn-default blue">
-                  <input type="radio" class="toggle" value="Sightseeing">Sightseeing
+                  <input type="radio" name="activities" value="Sightseeing">Sightseeing
                 </label>
                 <label class="btn btn-default blue">
-                  <input type="radio" class="toggle" value="Outdoor Activities">Outdoor Activities
+                  <input type="radio" name="activities" value="Outdoor Activities">Outdoor Activities
                 </label>
                 <label class="btn btn-default blue">
-                  <input type="radio" class="toggle" value="Dining">Dining
+                  <input type="radio" name="activities" value="Dining">Dining
                 </label>
                 <label class="btn btn-default blue">
-                  <input type="radio" class="toggle" value="Shopping">Shopping
+                  <input type="radio" name="activities" value="Shopping">Shopping
                 </label>
               </div>
             </div>
@@ -355,21 +355,10 @@
           <div class="row">
             <div class="col-md-12">
               <br>
-              <button type="submit" class="btn btn-primary" name="button">Done!</button>
+              <button type="submit" class="btn btn-primary" name="button">Generate Checklist</button>
             </div>
           </div>
         </form>
-
-        <div class="outputs">
-          <ul class="output-list">
-            <li>Who will be travelling: <ul><span class="list-who"></span></ul></li>
-            <li>Where are you travelling to: <span class="list-where"></span></li>
-            <li>How will you be travelling: <span class="list-how"></span></li>
-            <li>Where will you be staying: <span class="list-staying"></span></li>
-            <li>Planned Activity: <span class="list-activities"></span></li>
-          </ul>
-          <button type="button" class="btn btn-primary" id="to-next-page" name="button">Generate Checklist</button>
-        </div>
       </div>
 
       <div class="pageTwo">
@@ -386,15 +375,26 @@
            <form class="multiselect">
               <label><input type="checkbox" class="default" value=""/><span> Renew/check passport</span></label><br>
               <label><input type="checkbox" class="default" value=""/><span> Advise bank of future foreign credit card use</span></label><br>
-
-
-
               <label><input type="checkbox" class="default" value=""/><span> Leave itineraries with a relative</span></label><br>
               <label><input type="checkbox" class="default" value=""/><span> Setup auto e-mail response</span></label><br>
               <label><input type="checkbox" class="default" value=""/><span> Buy/recharge phone card/VOIP account</span></label><br>
               <label><input type="checkbox" class="default" value=""/><span> Insurance: Trip cancellation/medical</span></label><br>
               <label><input type="checkbox" class="default" value=""/><span> Change money</span></label><br>
               <label><input type="checkbox" class="default" value=""/><span> Check local destination weather/news</span></label><br>
+
+              <label><input type='checkbox' class='custom' value=''/><span id="modeOne">  </span></label><br>
+              <label><input type='checkbox' class='custom' value=''/><span id="modeTwo"> </span></label><br>
+
+              <label><input type='checkbox' class='custom' value=''/><span id="accOne"> </span></label><br>
+              <label><input type='checkbox' class='custom' value=''/><span id="accTwo"> </span></label><br>
+
+              <label><input type='checkbox' class='custom' value=''/><span id="actOne"> </span></label><br>
+              <label><input type='checkbox' class='custom' value=''/><span id="actTwo"> </span></label><br>
+
+              <!-- <div class="add checked">
+                <label><input type='checkbox' class='custom' value=''/><span> Amy</span></label>
+                <label><input type='checkbox' class='custom' value=''/><span> James</span></label>
+              </div> -->
               <!-- <div class="add">
                 <label for="add"></label>
                 <input type="text" name="custom" value="">
@@ -402,8 +402,8 @@
               </div> -->
             </div>
           </form>
-          <!-- <div class="col-sm-4" id="homePrepCheck"> -->
-           <!-- <label><h4>Home Preparation: </h4></label>
+          <!-- <div class="col-sm-4" id="homePrepCheck">
+           <label><h4>Home Preparation: </h4></label>
            <div class="multiselect-hp">
               <label><input type="checkbox" class="default" value=""/><span> Pay bills/rent/utilities</span></label><br>
               <label><input type="checkbox" class="default" value=""/><span> Forward or hold mail/newspapers/magazines</span></label><br>
