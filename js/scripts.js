@@ -8,23 +8,16 @@ function Traveler(travelPlace, travelMode, travelAccom, travelAct, traveler) {
 }
 
 Traveler.prototype.addMode = function() {
+  var checkRoute = "Check route for adverse conditions and closures";
+  var checkTicket = "Reconfirm ticket & check-in procedure with ticket provider";
   var travelModeArray = ["Plane", "Train", "Boat", "Car", "Bus"];
   for(var i = 0; i < travelModeArray.length; i++)  {
-    if (this.travelMode === travelModeArray[0]) {
-      $("#modeOne").text("Fly hello");
-      $("#modeTwo").text("Fly 2 hello");
-    } else if (this.travelMode === travelModeArray[1]) {
-      $("#modeOne").text("train hello");
-      $("#modeTwo").text("train 2 hello");
-    } else if (this.travelMode === travelModeArray[2]) {
-      $("#modeOne").text("boat hello");
-      $("#modeTwo").text("boat 2 hello");
-    } else if (this.travelMode === travelModeArray[3]) {
-      $("#modeOne").text("car hello");
-      $("#modeTwo").text("car 2 hello");
-    } else if (this.travelMode === travelModeArray[4]) {
-      $("#modeOne").text("bus hello");
-      $("#modeTwo").text("bus 2 hello");
+   if (this.travelMode === travelModeArray[3]) {
+     $("#modeOne").text(checkRoute);
+     $("#modeTwo").text("Fill gas & oil, get safety check");
+    } else if (this.travelMode === travelModeArray[i]) {
+      $("#modeOne").text(checkRoute);
+      $("#modeTwo").text(checkTicket);
     }
   }
 }
@@ -74,6 +67,8 @@ $(document).ready(function() {
   $("form#userTravelType").submit(function(event){
     event.preventDefault();
 
+    // $(".pageOne").hide();
+
     var who = $('#who input:checkbox:checked').val();
     var where = $('#where').val();
     var how = $('#how input:radio:checked').val();
@@ -87,11 +82,12 @@ $(document).ready(function() {
       newTraveler.travelerUser.push(who);
     });
 
+
     newTraveler.addMode();
     newTraveler.addAccom();
     newTraveler.addAct();
 
-    // $(".pageOne").hide();
+
 
     if(newTraveler.travelerUser.length != 0) {
       $(".pageTwo").show();
