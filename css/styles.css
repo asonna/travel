@@ -1,7 +1,21 @@
-.output {
-  display: none;
+.outputs {
+  /*display: none;*/
   margin-top: 30px
 }
 .jumbotron {
-  
+  height: 50px;
+  background-color: #99CCCC;
+  color: #006666;
+}
+
+#output, #travelPrepCheck, #homePrepCheck, #vaccCheck {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: auto;
+  background-color: white;
+  margin-right: 50px;
+}
+
+.pageTwo {
+  display: none;
 }
