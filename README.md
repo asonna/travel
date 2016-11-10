@@ -1,44 +1,28 @@
-# Object-Oriented JavaScript Independent Project: Ping-Pong
+# Javascript, HTML, Object Oriented & CSS GROUP PROJECT: TRAVEL
 
-_*Epicodus Introduction to Programming Week 4 Project, 11-05-16*_
+_*Epicodus Introduction to Programming final week Project, 11-10-16*_
 
-
-
-by Suzi Rubino
-
+by Amy , Annie Sonna, James  , Suzi Rubino.
 
 
 ##Description
 
-You're a team and you're building something awesome!
-
-
+You're a team and you're building something awesome.
 
 Spend time together as a team brainstorming your vision. Decide how you want to communicate and work together over the next 4 days. All ideas should be welcome and all members given roles. You can change partners daily or play to the strengths and preferences of your members (business logic vs user interface logic). Remember that in addition to coding skills, communication is one of the most important elements of building great applications. Let your team be one that fosters direct, honest communication and encourages every member's voice!
 
 
-
 For the presentation/demonstration, determine what the minimum viable product for demonstration is. A minimum viable product, or MVP, is a development approach where an application is created with the minimum sufficient features necessary to demonstrate it to users and/or investors. Additional features are implemented when/if time and resources allow. When you create an MVP, it should be a prototype of your idea and have the basic core elements in place so your audience (e.g. peers, investors, clients, future employers, future users, etc.) can understand what your vision is. Try to be both ambitious and realistic. Use a whiteboard or paper or online storyboard application if that would help everyone with the overview and the plan!
-
-
 
 You are going to create something incredible. Dive in!
 
 
 
-
-
 ###Objective from Epicodus page
-
-
 
 At the end of the week, you will present your group project at Friday's Trade Show, where it will be reviewed for the following objective:
 
-
-
 Participation in creating and presenting a project, and collaborating effectively with teammates.
-
-
 
 NO code review on this project.
 
@@ -46,19 +30,11 @@ NO code review on this project.
 
 ##Specifications
 
-
-
 WE NEED TO DETERMINE MINIMUM VIABLE PRODUCT FROM DESCRIPTION ABOVE AND APPLY TO SPECS BELOW
-
-
 
 Also, review these specs to see if we are working on simplest first, do this and redefine for next spec if necessary
 
-
-
 Minimum viable product might alter specs below?
-
-
 
 - [ ] Specification ONE User select input from 5 categories:
 
@@ -105,8 +81,7 @@ Minimum viable product might alter specs below?
      - Shopping
 
 
-
-Specifications:
+##Specifications:
 
 1  -  Example Input: adult with child, Canada, flying, camping, outdoor activities and submit
 
@@ -115,8 +90,6 @@ Specifications:
      - line item of items selected by user displaying in class beneath for this step will be transferred to next step later
 
      <ul> separate <i>
-
-
 
 
 
@@ -171,12 +144,7 @@ Specifications:
 
 
 
-
-
-
 * Before proceeding with this spec
-
-
 
 - [ ] Review and apply to MVP, remove anything?
 
@@ -187,16 +155,7 @@ Specifications:
    EG object = TravelPlan; key values = traveler, travelerDest, travelMode, travelAccom, travelActivity
 
 
-
-
-
-
-
-
-
 ##Setup/Installation requirements
-
-
 
 
 
@@ -206,11 +165,7 @@ _* x *_
 
 
 
-
-
 ## Technologies Used
-
-
 
 1. html
 
@@ -221,9 +176,6 @@ _* x *_
 4. custom and jQuery javascript utilizing objects
 
 
-
 ## Copyright and license information
-
-
 
 Not applicable at this time.

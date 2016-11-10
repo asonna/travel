@@ -1,11 +1,26 @@
+body {
+  background-image: url(../img/travel6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+span {
+  color: darkgreen;
+  font-weight: bold;
+}
+
 .outputs {
   /*display: none;*/
   margin-top: 30px
 }
 .jumbotron {
-  height: 50px;
+  height: 130px;
   background-color: #99CCCC;
   color: #006666;
+  font-size: 20px;
 }
 
 #output, #travelPrepCheck, #homePrepCheck, #vaccCheck, #documentCheck, #moneyCheck, #backPackCheck, #accessoriesCheck {
