@@ -58,9 +58,7 @@ $(document).ready(function() {
       newTraveler.travelerUser.push(who);
     });
 
-    if ($('#who input:checkbox:checked').length <= 0 || $('[name="mode"]:checked').length <= 0 || $('[name="accommodation"]:checked').length <= 0  || $('[name="activities"]:checked').length <= 0) {
-      alert("Answer all the questions to generate a checklist");
-    } else if ($('#who input.adult:checkbox:checked').length <= 0){
+    if ($('#who input.adult:checkbox:checked').length <= 0){
       alert("Come back when you are older or can talk.")
     } else {
       $(".pageOne").hide();
