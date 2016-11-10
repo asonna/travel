@@ -82,35 +82,60 @@ $(document).ready(function() {
 
       if(newTraveler.travelerUser.length != 0) {
         $(".pageTwo").show();
+        $("#changeCheck").show();
       }
 
       $("#sentenceUser").text(newTraveler.travelerUser + " traveling to " + newTraveler.travelPlace +" by "+ newTraveler.travelMode +  ". Accommodation: " + newTraveler.travelAccom + ". Planned activity: " + newTraveler.travelAct);
     };
- });
+  });
 
- $(function() {
    $("form.multiselect-tp").submit(function(event) {
      event.preventDefault();
      var tpCheckbox = $(".tp").val();
-     $("#list-tp").append("<label><input type='checkbox' class='custom' value=''><span>" + tpCheckbox + "</span></label><br>");
+     $("#list-tp").append("<label><input type='checkbox' class='custom' value=''><span>" + " " + tpCheckbox + "</span></label><br>");
      $(".tp").val("");
    });
- });
- $(function() {
+
    $("form.multiselect-hp").submit(function(event) {
      event.preventDefault();
       var hpCheckbox = $(".hp").val();
-     $("#list-hp").append("<label><input type='checkbox' class='custom' value=''/><span>" + hpCheckbox + "</span></label><br>");
+     $("#list-hp").append("<label><input type='checkbox' class='custom' value=''/><span>" + " " + hpCheckbox + "</span></label><br>");
      $(".hp").val("");
    });
- });
-  $(function() {
-    $("form.multiselect-v").submit(function(event) {
-      event.preventDefault();
-      var vCheckbox = $(".v").val();
-      $("#list-v").append("<br><label><input type='checkbox' class='custom' value=''/><span>" + vCheckbox + "</span></label><br>");
-      $(".v").val("");
-    });
+
+  $("form.multiselect-v").submit(function(event) {
+    event.preventDefault();
+    var vCheckbox = $(".v").val();
+    $("#list-v").append("<br><label><input type='checkbox' class='custom' value=''/><span>" + " " + vCheckbox + "</span></label>");
+    $(".v").val("");
+  });
+
+  $("form.multiselect-dc").submit(function(event) {
+    event.preventDefault();
+    var dcCheckbox = $(".dc").val();
+    $("#list-dc").append("<label><input type='checkbox' class='custom' value=''><span>" + " " + dcCheckbox + "</span></label><br>");
+    $(".dc").val("");
+  });
+
+  $("form.multiselect-mc").submit(function(event) {
+    event.preventDefault();
+     var mcCheckbox = $(".mc").val();
+    $("#list-mc").append("<label><input type='checkbox' class='custom' value=''/><span>" + " " + mcCheckbox + "</span></label><br>");
+    $(".mc").val("");
+  });
+
+  $("form.multiselect-bpc").submit(function(event) {
+    event.preventDefault();
+    var bpcCheckbox = $(".bpc").val();
+    $("#list-bpc").append("<label><input type='checkbox' class='custom' value=''><span>" + " " + bpcCheckbox + "</span></label><br>");
+    $(".bpc").val("");
+  });
+
+  $("form.multiselect-ac").submit(function(event) {
+    event.preventDefault();
+     var acCheckbox = $(".ac").val();
+    $("#list-ac").append("<label><input type='checkbox' class='custom' value=''/><span>" + " " + acCheckbox + "</span></label><br>");
+    $(".ac").val("");
   });
 
   $(function(){
@@ -121,5 +146,9 @@ $(document).ready(function() {
           $(this).siblings('span').css('text-decoration','none');
       }
     });
+  });
+  $("#changeCheck").click(function(event) {
+    $(".pageOne").toggle();
+    $("#changeCheck").hide();
   });
 });

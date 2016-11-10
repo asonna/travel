@@ -8,7 +8,7 @@
   color: #006666;
 }
 
-#output, #travelPrepCheck, #homePrepCheck, #vaccCheck, #documentCheck, #moneyCheck {
+#output, #travelPrepCheck, #homePrepCheck, #vaccCheck, #documentCheck, #moneyCheck, #backPackCheck, #accessoriesCheck {
   border: 1px solid gray;
   border-radius: 10px;
   margin: auto;

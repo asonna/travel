@@ -367,6 +367,7 @@
           <div class="col-md-12">
             <h4>This checklist has been generated for:</h4>
             <p><span id="sentenceUser"></span></p>
+            <button type="button" class="btn btn-primary" id="changeCheck">Change Criterias</button>
           </div>
         </div><br>
         <ul class="nav nav-tabs">
@@ -456,51 +457,61 @@
             <!-- <div class="row"> -->
               <div class="col-sm-4" id="documentCheck">
                <label><h4>Documents</h4></label>
-               <div class="multiselect">
-                  <label><input type="checkbox" class="default" value=""/><span> Passport</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Visas</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Personal identification</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Drivers license</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Vaccination certificate</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Health insurance documents</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Reservations and itineraries</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Copies of tickets/passport/etc.</span></label><br>
-                </div>
+               <form class="multiselect-dc">
+                  <div id="list-dc">
+                    <label><input type="checkbox" class="default" value=""/><span> Passport</span></label><br>
+                    <label><input type="checkbox" class="default" value=""/><span> Visas</span></label><br>
+                    <label><input type="checkbox" class="default" value=""/><span> Personal identification</span></label><br>
+                    <label><input type="checkbox" class="default" value=""/><span> Drivers license</span></label><br>
+                    <label><input type="checkbox" class="default" value=""/><span> Vaccination certificate</span></label><br>
+                    <label><input type="checkbox" class="default" value=""/><span> Health insurance documents</span></label><br>
+                    <label><input type="checkbox" class="default" value=""/><span> Reservations and itineraries</span></label><br>
+                    <label><input type="checkbox" class="default" value=""/><span> Copies of tickets/passport/etc.</span></label><br>
+                  </div>
+                  <input type="text" class="dc" name="custom" value="">
+                  <button type="submit" id="button2">Add</button>
+                </form>
               </div>
               <div class="col-sm-4" id="moneyCheck">
                <label><h4>Money</h4></label>
-               <div class="multiselect">
-                  <label><input type="checkbox" class="default" value=""/><span> Cash (Foreigh and local currency)</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Emergency money</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Credit card/debit card</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Wallet</span></label><br>
-                </div>
+               <form class="multiselect-mc">
+                  <div id="list-mc">
+                    <label><input type="checkbox" class="default" value=""/><span> Cash (Foreigh and local currency)</span></label><br>
+                    <label><input type="checkbox" class="default" value=""/><span> Emergency money</span></label><br>
+                    <label><input type="checkbox" class="default" value=""/><span> Credit card/debit card</span></label><br>
+                    <label><input type="checkbox" class="default" value=""/><span> Wallet</span></label><br>
+                  </div>
+                  <input type="text" class="mc" name="custom" value="">
+                  <button type="submit" id="button2">Add</button>
+                </form>
               </div>
             <!-- </div> -->
           </div>
           <div id="packing-list" class="tab-pane fade">
             <!-- <div class="row"> -->
-              <div class="col-sm-4" id="documentCheck">
-               <label><h4>Accessories</h4></label>
-               <div class="multiselect">
-                  <label><input type="checkbox" class="default" value=""/><span> Passport</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Visas</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Personal identification</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Drivers license</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Vaccination certificate</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Health insurance documents</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Reservations and itineraries</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> LCopies of tickets/passport/etc.</span></label><br>
-                </div>
+              <div class="col-sm-4" id="backPackCheck">
+               <label><h4>Bags, cases, and packing</h4></label>
+               <form class="multiselect-bpc">
+                 <div id="list-bpc">
+                   <label><input type="checkbox" class="default" value=""/><span> Carry-on bag (small back-pack)</span></label><br>
+                   <label><input type="checkbox" class="default" value=""/><span> Backpack/Suitcase</span></label><br>
+                   <label><input type="checkbox" class="default" value=""/><span> Luggage tags</span></label><br>
+                 </div>
+                 <input type="text" class="bpc" name="custom" value="">
+                 <button type="submit" id="button2">Add</button>
+                </form>
               </div>
-              <div class="col-sm-4" id="moneyCheck">
-               <label><h4>Money</h4></label>
-               <div class="multiselect">
-                  <label><input type="checkbox" class="default" value=""/><span> Cash (Foreigh and local currency)</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Emergency money</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Credit card/debit card</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Wallet</span></label><br>
-                </div>
+              <div class="col-sm-4" id="accessoriesCheck">
+               <label><h4>Accessories</h4></label>
+               <form class="multiselect-ac">
+                 <div id="list-ac">
+                   <label><input type="checkbox" class="default" value=""/><span> Belt</span></label><br>
+                   <label><input type="checkbox" class="default" value=""/><span> Sunglasses/case/strap</span></label><br>
+                   <label><input type="checkbox" class="default" value=""/><span> Watch</span></label><br>
+                 </div>
+                 <input type="text" class="ac" name="custom" value="">
+                 <button type="submit" id="button2">Add</button>
+                </form>
               </div>
             <!-- </div> -->
           </div>
