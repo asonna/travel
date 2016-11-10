@@ -39,14 +39,11 @@ Traveler.prototype.addAccom = function() {
     }
   }
 }
-
 // Front End
 
 $(document).ready(function() {
   $("form#userTravelType").submit(function(event){
     event.preventDefault();
-
-    $(".pageOne").hide();
 
     var who = $('#who input:checkbox:checked').val();
     var where = $('#where').val();
@@ -61,27 +58,34 @@ $(document).ready(function() {
       newTraveler.travelerUser.push(who);
     });
 
-    var continent = $("option:selected").attr("class");
-    console.log(continent);
+    if ($('#who input:checkbox:checked').length <= 0 || $('[name="mode"]:checked').length <= 0 || $('[name="accommodation"]:checked').length <= 0  || $('[name="activities"]:checked').length <= 0) {
+      alert("Answer all the questions to generate a checklist");
+    } else if ($('#who input.adult:checkbox:checked').length <= 0){
+      alert("Come back when you are older or can talk.")
+    } else {
+      $(".pageOne").hide();
 
-    if (continent === "AS") {
-      $(".turb").show();
-      $(".Typhoid").show();
-      $(".jbe").show();
-    } else if (continent === "AF" || continent === "SA" || continent === "OC") {
-      $(".typ").show();
-    }
+      var continent = $("option:selected").attr("class");
+      console.log(continent);
 
-    newTraveler.addMode();
-    newTraveler.addAccom();
+      if (continent === "AS") {
+        $(".turb").show();
+        $(".typ").show();
+        $(".jbe").show();
+      } else if (continent === "AF" || continent === "SA" || continent === "OC") {
+        $(".typ").show();
+      }
+
+      newTraveler.addMode();
+      newTraveler.addAccom();
 
 
-    if(newTraveler.travelerUser.length != 0) {
-      $(".pageTwo").show();
-    }
+      if(newTraveler.travelerUser.length != 0) {
+        $(".pageTwo").show();
+      }
 
-    $("#sentenceUser").text(newTraveler.travelerUser + " traveling to " + newTraveler.travelPlace +" by "+ newTraveler.travelMode +  ". Accommodation: " + newTraveler.travelAccom + ". Planned activity: " + newTraveler.travelAct);
-
+      $("#sentenceUser").text(newTraveler.travelerUser + " traveling to " + newTraveler.travelPlace +" by "+ newTraveler.travelMode +  ". Accommodation: " + newTraveler.travelAccom + ". Planned activity: " + newTraveler.travelAct);
+    };
  });
 
  $(function() {
