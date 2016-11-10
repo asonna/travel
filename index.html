@@ -10,506 +10,547 @@
     <title>Travel Planning</title>
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Travel Planning Checklist</h1>
+    <div class="pageOne">
+      <div id="container1" class="container">
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/checklist.png" alt="checklist logo" height="100px" />
+            </div>
+            <div class="col-md-9">
+              <h2>International Travel Planning</h2>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="pageOne">
-        <h3>Select from each category below: </h3>
-        <form id="userTravelType">
-          <div class="row">
-            <div class="col-md-12 who">
-              <h4>Who will be travelling?</h4>
-              <div class="btn-group" id="who" data-toggle="buttons">
-                <label class="btn btn-default blue">
-                  <input type="checkbox" class="adult" value="Adult">Adult
-                </label>
-                <label class="btn btn-default blue">
-                  <input type="checkbox" class="kids" value="Kids">Kids (0-11 years)
-                </label>
-                <label class="btn btn-default blue">
-                  <input type="checkbox" class="pets" value="Pets">Pets
-                </label>
+      <div class="backgroundImage">
+        <p>&nbsp;</p>
+        <div id="container1" class="container">
+          <div class="pageOneBox">
+            <h3>Select from each category below: </h3>
+            <form id="userTravelType">
+              <div class="pageOneForm">
+                <div class="row">
+                  <div class="col-md-12 who">
+                    <h4>Who will be traveling?</h4>
+                    <div class="btn-group" id="who" data-toggle="buttons">
+                      <label class="btn btn-default blue">
+                        <input type="checkbox" class="adult" value="Adult">Adult
+                      </label>
+                      <label class="btn btn-default blue">
+                        <input type="checkbox" class="kids" value="Kids">Kids (0-11 years)
+                      </label>
+                      <label class="btn btn-default blue">
+                        <input type="checkbox" class="pets" value="Pets">Pets
+                      </label>
+                    </div>
+                    <p>&nbsp;</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 where">
+                    <div class="form-group">
+                      <label for="where"><h4>Where are you traveling to?</h4></label><br>
+                      <select  class="form-control" id="where">
+                        <option class="AS" value="Afghanistan">Afghanistan</option>
+                        <option class="EU" value="Aland Islands">Aland Islands</option>
+                        <option class="EU" value="Albania">Albania</option>
+                        <option class="AF" value="Algeria">Algeria</option>
+                        <option class="OC" value="American Samoa">American Samoa</option>
+                        <option class="EU" value="Andorra">Andorra</option>
+                        <option class="AF" value="Angola">Angola</option>
+                        <option class="NA" value="Anguilla">Anguilla</option>
+                        <option class="AN" value="Antarctica">Antarctica</option>
+                        <option class="NA" value="Antigua And Barbuda">Antigua And Barbuda</option>
+                        <option class="SA" value="Argentina">Argentina</option>
+                        <option class="EU" value="Armenia">Armenia</option>
+                        <option class="NA" value="Aruba">Aruba</option>
+                        <option class="OC" value="Australia">Australia</option>
+                        <option class="EU" value="Austria">Austria</option>
+                        <option class="AS" value="Azerbaijan">Azerbaijan</option>
+                        <option class="NA" value="Bahamas">Bahamas</option>
+                        <option class="AS" value="Bahrain">Bahrain</option>
+                        <option class="AS" value="Bangladesh">Bangladesh</option>
+                        <option class="NA" value="Barbados">Barbados</option>
+                        <option class="EU" value="Belarus">Belarus</option>
+                        <option class="EU" value="Belgium">Belgium</option>
+                        <option class="NA" value="Belize">Belize</option>
+                        <option class="AF" value="Benin">Benin</option>
+                        <option class="NA" value="Bermuda">Bermuda</option>
+                        <option class="AS" value="Bhutan">Bhutan</option>
+                        <option class="SA" value="Bolivia">Bolivia</option>
+                        <option class="EU" value="Bosnia And Herzegovina">Bosnia And Herzegovina</option>
+                        <option class="AF" value="Botswana">Botswana</option>
+                        <option class="AN" value="Bouvet Island">Bouvet Island</option>
+                        <option class="SA" value="Brazil">Brazil</option>
+                        <option class="AS" value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                        <option class="AS" value="Brunei Darussalam">Brunei Darussalam</option>
+                        <option class="EU" value="Bulgaria">Bulgaria</option>
+                        <option class="AF" value="Burkina Faso">Burkina Faso</option>
+                        <option class="AF" value="Burundi">Burundi</option>
+                        <option class="AS" value="Cambodia">Cambodia</option>
+                        <option class="AF" value="Cameroon">Cameroon</option>
+                        <option class="NA" value="Canada">Canada</option>
+                        <option class="AF" value="Cape Verde">Cape Verde</option>
+                        <option class="NA" value="Cayman Islands">Cayman Islands</option>
+                        <option class="AF" value="Central African Republic">Central African Republic</option>
+                        <option class="AF" value="Chad">Chad</option>
+                        <option class="SA" value="Chile">Chile</option>
+                        <option class="AS" value="China">China</option>
+                        <option class="AS" value="Christmas Island">Christmas Island</option>
+                        <option class="AS" value="Cocos (Keeling) Is">Cocos (Keeling) Is</option>
+                        <option class="SA" value="Colombia">Colombia</option>
+                        <option class="AF" value="Comoros">Comoros</option>
+                        <option class="AF" value="Congo">Congo</option>
+                        <option class="AF" value="Congo, Democratic ">Congo, Democratic </option>
+                        <option class="OC" value="Cook Islands">Cook Islands</option>
+                        <option class="NA" value="Costa Rica">Costa Rica</option>
+                        <option class="AF" value="Cote D\'Ivoire">Cote D\'Ivoire</option>
+                        <option class="EU" value="Croatia">Croatia</option>
+                        <option class="NA" value="Cuba">Cuba</option>
+                        <option class="EU" value="Cyprus">Cyprus</option>
+                        <option class="EU" value="Czech Republic">Czech Republic</option>
+                        <option class="EU" value="Denmark">Denmark</option>
+                        <option class="AF" value="Djibouti">Djibouti</option>
+                        <option class="NA" value="Dominica">Dominica</option>
+                        <option class="NA" value="Dominican Republic">Dominican Republic</option>
+                        <option class="SA" value="Ecuador">Ecuador</option>
+                        <option class="AF" value="Egypt">Egypt</option>
+                        <option class="NA" value="El Salvador">El Salvador</option>
+                        <option class="AF" value="Equatorial Guinea">Equatorial Guinea</option>
+                        <option class="AF" value="Eritrea">Eritrea</option>
+                        <option class="EU" value="Estonia">Estonia</option>
+                        <option class="AF" value="Ethiopia">Ethiopia</option>
+                        <option class="SA" value="Falkland Islands">Falkland Islands</option>
+                        <option class="EU" value="Faroe Islands">Faroe Islands</option>
+                        <option class="OC" value="Fiji">Fiji</option>
+                        <option class="EU" value="Finland">Finland</option>
+                        <option class="EU" value="France">France</option>
+                        <option class="SA" value="French Guiana">French Guiana</option>
+                        <option class="OC" value="French Polynesia">French Polynesia</option>
+                        <option class="AN" value="French Southern Territories">French Southern Territories</option>
+                        <option class="AF" value="Gabon">Gabon</option>
+                        <option class="AF" value="Gambia">Gambia</option>
+                        <option class="EU" value="Georgia">Georgia</option>
+                        <option class="EU" value="Germany">Germany</option>
+                        <option class="AF" value="Ghana">Ghana</option>
+                        <option class="EU" value="Gibraltar">Gibraltar</option>
+                        <option class="EU" value="Greece">Greece</option>
+                        <option class="NA" value="Greenland">Greenland</option>
+                        <option class="NA" value="Grenada">Grenada</option>
+                        <option class="NA" value="Guadeloupe">Guadeloupe</option>
+                        <option class="OC" value="Guam">Guam</option>
+                        <option class="NA" value="Guatemala">Guatemala</option>
+                        <option class="EU" value="Guernsey">Guernsey</option>
+                        <option class="AF" value="Guinea">Guinea</option>
+                        <option class="AF" value="Guinea-Bissau">Guinea-Bissau</option>
+                        <option class="SA" value="Guyana">Guyana</option>
+                        <option class="NA" value="Haiti">Haiti</option>
+                        <option class="AN" value="Heard Island & Mcdonald Islands">Heard Island & Mcdonald Islands</option>
+                        <option class="EU" value="Holy See">Holy See</option>
+                        <option class="NA" value="Honduras">Honduras</option>
+                        <option class="AS" value="Hong Kong">Hong Kong</option>
+                        <option class="EU" value="Hungary">Hungary</option>
+                        <option class="EU" value="Iceland">Iceland</option>
+                        <option class="AS" value="India">India</option>
+                        <option class="AS" value="Indonesia">Indonesia</option>
+                        <option class="AS" value="Iran">Iran</option>
+                        <option class="AS" value="Iraq">Iraq</option>
+                        <option class="EU" value="Ireland">Ireland</option>
+                        <option class="EU" value="Isle Of Man">Isle Of Man</option>
+                        <option class="AS" value="Israel">Israel</option>
+                        <option class="EU" value="Italy">Italy</option>
+                        <option class="NA" value="Jamaica">Jamaica</option>
+                        <option class="AS" value="Japan">Japan</option>
+                        <option class="EU" value="Jersey">Jersey</option>
+                        <option class="AS" value="Jordan">Jordan</option>
+                        <option class="AS" value="Kazakhstan">Kazakhstan</option>
+                        <option class="AF" value="Kenya">Kenya</option>
+                        <option class="OC" value="Kiribati">Kiribati</option>
+                        <option class="AS" value="Korea">Korea</option>
+                        <option class="AS" value="Kuwait">Kuwait</option>
+                        <option class="AS" value="Kyrgyzstan">Kyrgyzstan</option>
+                        <option class="AS" value="Lao">Lao</option>
+                        <option class="EU" value="Latvia">Latvia</option>
+                        <option class="AS" value="Lebanon">Lebanon</option>
+                        <option class="AF" value="Lesotho">Lesotho</option>
+                        <option class="AF" value="Liberia">Liberia</option>
+                        <option class="AF" value="Libya">Libya</option>
+                        <option class="EU" value="Liechtenstein">Liechtenstein</option>
+                        <option class="EU" value="Lithuania">Lithuania</option>
+                        <option class="EU" value="Luxembourg">Luxembourg</option>
+                        <option class="AS" value="Macao">Macao</option>
+                        <option class="EU" value="Macedonia">Macedonia</option>
+                        <option class="AF" value="Madagascar">Madagascar</option>
+                        <option class="AF" value="Malawi">Malawi</option>
+                        <option class="AS" value="Malaysia">Malaysia</option>
+                        <option class="AS" value="Maldives">Maldives</option>
+                        <option class="AF" value="Mali">Mali</option>
+                        <option class="EU" value="Malta">Malta</option>
+                        <option class="OC" value="Marshall Islands">Marshall Islands</option>
+                        <option class="NA" value="Martinique">Martinique</option>
+                        <option class="AF" value="Mauritania">Mauritania</option>
+                        <option class="AF" value="Mauritius">Mauritius</option>
+                        <option class="EU" value="Mayotte">Mayotte</option>
+                        <option class="NA" value="Mexico">Mexico</option>
+                        <option class="OC" value="Micronesia">Micronesia</option>
+                        <option class="EU" value="Moldova">Moldova</option>
+                        <option class="EU" value="Monaco">Monaco</option>
+                        <option class="AS" value="Mongolia">Mongolia</option>
+                        <option class="EU" value="Montenegro">Montenegro</option>
+                        <option class="NA" value="Montserrat">Montserrat</option>
+                        <option class="AF" value="Morocco">Morocco</option>
+                        <option class="AF" value="Mozambique">Mozambique</option>
+                        <option class="AS" value="Myanmar">Myanmar</option>
+                        <option class="AF" value="Namibia">Namibia</option>
+                        <option class="OC" value="Nauru">Nauru</option>
+                        <option class="AS" value="Nepal">Nepal</option>
+                        <option class="EU" value="Netherlands">Netherlands</option>
+                        <option class="NA" value="Netherlands Antilles">Netherlands Antilles</option>
+                        <option class="OC" value="New Caledonia">New Caledonia</option>
+                        <option class="OC" value="New Zealand">New Zealand</option>
+                        <option class="NA" value="Nicaragua">Nicaragua</option>
+                        <option class="AF" value="Niger">Niger</option>
+                        <option class="AF" value="Nigeria">Nigeria</option>
+                        <option class="OC" value="Niue">Niue</option>
+                        <option class="OC" value="Norfolk Island">Norfolk Island</option>
+                        <option class="OC" value="Northern Mariana Islands">Northern Mariana Islands</option>
+                        <option class="EU" value="Norway">Norway</option>
+                        <option class="AS" value="Oman">Oman</option>
+                        <option class="AS" value="Pakistan">Pakistan</option>
+                        <option class="OC" value="Palau">Palau</option>
+                        <option class="AS" value="Palestinian Territory">Palestinian Territory</option>
+                        <option class="NA" value="Panama">Panama</option>
+                        <option class="OC" value="Papua New Guinea">Papua New Guinea</option>
+                        <option class="SA" value="Paraguay">Paraguay</option>
+                        <option class="SA" value="Peru">Peru</option>
+                        <option class="AS" value="Philippines">Philippines</option>
+                        <option class="OC" value="Pitcairn">Pitcairn</option>
+                        <option class="EU" value="Poland">Poland</option>
+                        <option class="EU" value="Portugal">Portugal</option>
+                        <option class="NA" value="Puerto Rico">Puerto Rico</option>
+                        <option class="AS" value="Qatar">Qatar</option>
+                        <option class="AF" value="Reunion">Reunion</option>
+                        <option class="EU" value="Romania">Romania</option>
+                        <option class="EU" value="Russian Federation">Russian Federation</option>
+                        <option class="AF" value="Rwanda">Rwanda</option>
+                        <option class="NA" value="Saint Barthelemy">Saint Barthelemy</option>
+                        <option class="AF" value="Saint Helena">Saint Helena</option>
+                        <option class="NA" value="Saint Kitts And Nevis">Saint Kitts And Nevis</option>
+                        <option class="NA" value="Saint Lucia">Saint Lucia</option>
+                        <option class="NA" value="Saint Martin">Saint Martin</option>
+                        <option class="NA" value="Saint Pierre And Miquelon">Saint Pierre And Miquelon</option>
+                        <option class="NA" value="Saint Vincent And Grenadines">Saint Vincent And Grenadines</option>
+                        <option class="OC" value="Samoa">Samoa</option>
+                        <option class="EU" value="San Marino">San Marino</option>
+                        <option class="AF" value="Sao Tome And Principe">Sao Tome And Principe</option>
+                        <option class="AS" value="Saudi Arabia">Saudi Arabia</option>
+                        <option class="AF" value="Senegal">Senegal</option>
+                        <option class="EU" value="Serbia">Serbia</option>
+                        <option class="AF" value="Seychelles">Seychelles</option>
+                        <option class="AF" value="Sierra Leone">Sierra Leone</option>
+                        <option class="AS" value="Singapore">Singapore</option>
+                        <option class="EU" value="Slovakia">Slovakia</option>
+                        <option class="EU" value="Slovenia">Slovenia</option>
+                        <option class="OC" value="Solomon Islands">Solomon Islands</option>
+                        <option class="AF" value="Somalia">Somalia</option>
+                        <option class="AF" value="South Africa">South Africa</option>
+                        <option class="AN" value="South Georgia">South Georgia</option>
+                        <option class="EU" value="Spain">Spain</option>
+                        <option class="AS" value="Sri Lanka">Sri Lanka</option>
+                        <option class="AF" value="Sudan">Sudan</option>
+                        <option class="SA" value="Suriname">Suriname</option>
+                        <option class="EU" value="Svalbard And Jan Mayden">Svalbard And Jan Mayden</option>
+                        <option class="AF" value="Swaziland">Swaziland</option>
+                        <option class="EU" value="Sweden">Sweden</option>
+                        <option class="EU" value="Switzerland">Switzerland</option>
+                        <option class="AS" value="Syrian Arab Republic">Syrian Arab Republic</option>
+                        <option class="AS" value="Taiwan">Taiwan</option>
+                        <option class="AS" value="Tajikistan">Tajikistan</option>
+                        <option class="AF" value="Tanzania">Tanzania</option>
+                        <option class="AS" value="Thailand">Thailand</option>
+                        <option class="AS" value="Timor-Leste">Timor-Leste</option>
+                        <option class="AF" value="Togo">Togo</option>
+                        <option class="OC" value="Tokelau">Tokelau</option>
+                        <option class="OC" value="Tonga">Tonga</option>
+                        <option class="NA" value="Trinidad And Tobago">Trinidad And Tobago</option>
+                        <option class="AF" value="Tunisia">Tunisia</option>
+                        <option class="EU" value="Turkey">Turkey</option>
+                        <option class="AS" value="Turkmenistan">Turkmenistan</option>
+                        <option class="NA" value="Turks And Caicos Islands">Turks And Caicos Islands</option>
+                        <option class="OC" value="Tuvalu">Tuvalu</option>
+                        <option class="AF" value="Uganda">Uganda</option>
+                        <option class="EU" value="Ukraine">Ukraine</option>
+                        <option class="AS" value="United Arab Emirates">United Arab Emirates</option>
+                        <option class="EU" value="United Kingdom">United Kingdom</option>
+                        <option class="NA" value="United States">United States</option>
+                        <option class="NA" value="United States Outl">United States Outl</option>
+                        <option class="SA" value="Uruguay">Uruguay</option>
+                        <option class="AS" value="Uzbekistan">Uzbekistan</option>
+                        <option class="OC" value="Vanuatu">Vanuatu</option>
+                        <option class="SA" value="Venezuela">Venezuela</option>
+                        <option class="AS" value="Viet Nam">Viet Nam</option>
+                        <option class="NA" value="Virgin Islands, Br">Virgin Islands, Br</option>
+                        <option class="NA" value="Virgin Islands, U.S">Virgin Islands, U.S</option>
+                        <option class="OC" value="Wallis And Futuna">Wallis And Futuna</option>
+                        <option class="AF" value="Western Sahara">Western Sahara</option>
+                        <option class="AS" value="Yemen">Yemen</option>
+                        <option class="AF" value="Zambia">Zambia</option>
+                        <option class="AF" value="Zimbabwe">Zimbabwe</option>
+                      </select>
+                    </div>
+                    <p>&nbsp;</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 how">
+                    <h4>How will you be traveling?</h4>
+                    <div class="btn-group" id="how" data-toggle="buttons">
+                      <label class="btn btn-default blue">
+                        <input type="radio" name="mode" value="Plane">Plane
+                      </label>
+                      <label class="btn btn-default blue">
+                        <input type="radio" name="mode" value="Train">Train
+                      </label>
+                      <label class="btn btn-default blue">
+                        <input type="radio" name="mode" value="Boat">Boat
+                      </label>
+                      <label class="btn btn-default blue">
+                        <input type="radio" name="mode" value="Car">Car
+                      </label>
+                      <label class="btn btn-default blue">
+                        <input type="radio" name="mode" value="Bus">Bus
+                      </label>
+                    </div>
+                    <p>&nbsp;</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 staying">
+                    <h4>Where will you be staying?</h4>
+                    <div class="btn-group" id="staying" data-toggle="buttons">
+                      <label class="btn btn-default blue">
+                        <input type="radio" name="accommodation" value="Hotel">Hotel
+                      </label>
+                      <label class="btn btn-default blue">
+                        <input type="radio" name="accommodation" value="Hostel/Guesthouse">Hostel/GuestHouse
+                      </label>
+                      <label class="btn btn-default blue">
+                        <input type="radio" name="accommodation" value="Camping">Camping
+                      </label>
+                      <label class="btn btn-default blue">
+                        <input type="radio" name="accommodation" value="Friends/Relatives">Friends/Relatives
+                      </label>
+                    </div>
+                    <p>&nbsp;</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 activities">
+                    <h4>Planned activities</h4>
+                    <div class="btn-group" id="activities" data-toggle="buttons">
+                      <label class="btn btn-default blue">
+                        <input type="radio" name="activities" value="Sightseeing">Sightseeing
+                      </label>
+                      <label class="btn btn-default blue">
+                        <input type="radio" name="activities" value="Outdoor Activities">Outdoor Activities
+                      </label>
+                      <label class="btn btn-default blue">
+                        <input type="radio" name="activities" value="Dining">Dining
+                      </label>
+                      <label class="btn btn-default blue">
+                        <input type="radio" name="activities" value="Shopping">Shopping
+                      </label>
+                    </div>
+                    <p></p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 where">
-              <div class="form-group">
-                <label for="where"><h4>Where are travelling to?</h4></label><br>
-                <select  class="form-control" id="where">
-                  <option class="AS" value="Afghanistan">Afghanistan</option>
-                  <option class="EU" value="Aland Islands">Aland Islands</option>
-                  <option class="EU" value="Albania">Albania</option>
-                  <option class="AF" value="Algeria">Algeria</option>
-                  <option class="OC" value="American Samoa">American Samoa</option>
-                  <option class="EU" value="Andorra">Andorra</option>
-                  <option class="AF" value="Angola">Angola</option>
-                  <option class="NA" value="Anguilla">Anguilla</option>
-                  <option class="AN" value="Antarctica">Antarctica</option>
-                  <option class="NA" value="Antigua And Barbuda">Antigua And Barbuda</option>
-                  <option class="SA" value="Argentina">Argentina</option>
-                  <option class="EU" value="Armenia">Armenia</option>
-                  <option class="NA" value="Aruba">Aruba</option>
-                  <option class="OC" value="Australia">Australia</option>
-                  <option class="EU" value="Austria">Austria</option>
-                  <option class="AS" value="Azerbaijan">Azerbaijan</option>
-                  <option class="NA" value="Bahamas">Bahamas</option>
-                  <option class="AS" value="Bahrain">Bahrain</option>
-                  <option class="AS" value="Bangladesh">Bangladesh</option>
-                  <option class="NA" value="Barbados">Barbados</option>
-                  <option class="EU" value="Belarus">Belarus</option>
-                  <option class="EU" value="Belgium">Belgium</option>
-                  <option class="NA" value="Belize">Belize</option>
-                  <option class="AF" value="Benin">Benin</option>
-                  <option class="NA" value="Bermuda">Bermuda</option>
-                  <option class="AS" value="Bhutan">Bhutan</option>
-                  <option class="SA" value="Bolivia">Bolivia</option>
-                  <option class="EU" value="Bosnia And Herzegovina">Bosnia And Herzegovina</option>
-                  <option class="AF" value="Botswana">Botswana</option>
-                  <option class="AN" value="Bouvet Island">Bouvet Island</option>
-                  <option class="SA" value="Brazil">Brazil</option>
-                  <option class="AS" value="British Indian Ocean Territory">British Indian Ocean Territory</option>
-                  <option class="AS" value="Brunei Darussalam">Brunei Darussalam</option>
-                  <option class="EU" value="Bulgaria">Bulgaria</option>
-                  <option class="AF" value="Burkina Faso">Burkina Faso</option>
-                  <option class="AF" value="Burundi">Burundi</option>
-                  <option class="AS" value="Cambodia">Cambodia</option>
-                  <option class="AF" value="Cameroon">Cameroon</option>
-                  <option class="NA" value="Canada">Canada</option>
-                  <option class="AF" value="Cape Verde">Cape Verde</option>
-                  <option class="NA" value="Cayman Islands">Cayman Islands</option>
-                  <option class="AF" value="Central African Republic">Central African Republic</option>
-                  <option class="AF" value="Chad">Chad</option>
-                  <option class="SA" value="Chile">Chile</option>
-                  <option class="AS" value="China">China</option>
-                  <option class="AS" value="Christmas Island">Christmas Island</option>
-                  <option class="AS" value="Cocos (Keeling) Is">Cocos (Keeling) Is</option>
-                  <option class="SA" value="Colombia">Colombia</option>
-                  <option class="AF" value="Comoros">Comoros</option>
-                  <option class="AF" value="Congo">Congo</option>
-                  <option class="AF" value="Congo, Democratic ">Congo, Democratic </option>
-                  <option class="OC" value="Cook Islands">Cook Islands</option>
-                  <option class="NA" value="Costa Rica">Costa Rica</option>
-                  <option class="AF" value="Cote D\'Ivoire">Cote D\'Ivoire</option>
-                  <option class="EU" value="Croatia">Croatia</option>
-                  <option class="NA" value="Cuba">Cuba</option>
-                  <option class="EU" value="Cyprus">Cyprus</option>
-                  <option class="EU" value="Czech Republic">Czech Republic</option>
-                  <option class="EU" value="Denmark">Denmark</option>
-                  <option class="AF" value="Djibouti">Djibouti</option>
-                  <option class="NA" value="Dominica">Dominica</option>
-                  <option class="NA" value="Dominican Republic">Dominican Republic</option>
-                  <option class="SA" value="Ecuador">Ecuador</option>
-                  <option class="AF" value="Egypt">Egypt</option>
-                  <option class="NA" value="El Salvador">El Salvador</option>
-                  <option class="AF" value="Equatorial Guinea">Equatorial Guinea</option>
-                  <option class="AF" value="Eritrea">Eritrea</option>
-                  <option class="EU" value="Estonia">Estonia</option>
-                  <option class="AF" value="Ethiopia">Ethiopia</option>
-                  <option class="SA" value="Falkland Islands">Falkland Islands</option>
-                  <option class="EU" value="Faroe Islands">Faroe Islands</option>
-                  <option class="OC" value="Fiji">Fiji</option>
-                  <option class="EU" value="Finland">Finland</option>
-                  <option class="EU" value="France">France</option>
-                  <option class="SA" value="French Guiana">French Guiana</option>
-                  <option class="OC" value="French Polynesia">French Polynesia</option>
-                  <option class="AN" value="French Southern Territories">French Southern Territories</option>
-                  <option class="AF" value="Gabon">Gabon</option>
-                  <option class="AF" value="Gambia">Gambia</option>
-                  <option class="EU" value="Georgia">Georgia</option>
-                  <option class="EU" value="Germany">Germany</option>
-                  <option class="AF" value="Ghana">Ghana</option>
-                  <option class="EU" value="Gibraltar">Gibraltar</option>
-                  <option class="EU" value="Greece">Greece</option>
-                  <option class="NA" value="Greenland">Greenland</option>
-                  <option class="NA" value="Grenada">Grenada</option>
-                  <option class="NA" value="Guadeloupe">Guadeloupe</option>
-                  <option class="OC" value="Guam">Guam</option>
-                  <option class="NA" value="Guatemala">Guatemala</option>
-                  <option class="EU" value="Guernsey">Guernsey</option>
-                  <option class="AF" value="Guinea">Guinea</option>
-                  <option class="AF" value="Guinea-Bissau">Guinea-Bissau</option>
-                  <option class="SA" value="Guyana">Guyana</option>
-                  <option class="NA" value="Haiti">Haiti</option>
-                  <option class="AN" value="Heard Island & Mcdonald Islands">Heard Island & Mcdonald Islands</option>
-                  <option class="EU" value="Holy See">Holy See</option>
-                  <option class="NA" value="Honduras">Honduras</option>
-                  <option class="AS" value="Hong Kong">Hong Kong</option>
-                  <option class="EU" value="Hungary">Hungary</option>
-                  <option class="EU" value="Iceland">Iceland</option>
-                  <option class="AS" value="India">India</option>
-                  <option class="AS" value="Indonesia">Indonesia</option>
-                  <option class="AS" value="Iran">Iran</option>
-                  <option class="AS" value="Iraq">Iraq</option>
-                  <option class="EU" value="Ireland">Ireland</option>
-                  <option class="EU" value="Isle Of Man">Isle Of Man</option>
-                  <option class="AS" value="Israel">Israel</option>
-                  <option class="EU" value="Italy">Italy</option>
-                  <option class="NA" value="Jamaica">Jamaica</option>
-                  <option class="AS" value="Japan">Japan</option>
-                  <option class="EU" value="Jersey">Jersey</option>
-                  <option class="AS" value="Jordan">Jordan</option>
-                  <option class="AS" value="Kazakhstan">Kazakhstan</option>
-                  <option class="AF" value="Kenya">Kenya</option>
-                  <option class="OC" value="Kiribati">Kiribati</option>
-                  <option class="AS" value="Korea">Korea</option>
-                  <option class="AS" value="Kuwait">Kuwait</option>
-                  <option class="AS" value="Kyrgyzstan">Kyrgyzstan</option>
-                  <option class="AS" value="Lao">Lao</option>
-                  <option class="EU" value="Latvia">Latvia</option>
-                  <option class="AS" value="Lebanon">Lebanon</option>
-                  <option class="AF" value="Lesotho">Lesotho</option>
-                  <option class="AF" value="Liberia">Liberia</option>
-                  <option class="AF" value="Libya">Libya</option>
-                  <option class="EU" value="Liechtenstein">Liechtenstein</option>
-                  <option class="EU" value="Lithuania">Lithuania</option>
-                  <option class="EU" value="Luxembourg">Luxembourg</option>
-                  <option class="AS" value="Macao">Macao</option>
-                  <option class="EU" value="Macedonia">Macedonia</option>
-                  <option class="AF" value="Madagascar">Madagascar</option>
-                  <option class="AF" value="Malawi">Malawi</option>
-                  <option class="AS" value="Malaysia">Malaysia</option>
-                  <option class="AS" value="Maldives">Maldives</option>
-                  <option class="AF" value="Mali">Mali</option>
-                  <option class="EU" value="Malta">Malta</option>
-                  <option class="OC" value="Marshall Islands">Marshall Islands</option>
-                  <option class="NA" value="Martinique">Martinique</option>
-                  <option class="AF" value="Mauritania">Mauritania</option>
-                  <option class="AF" value="Mauritius">Mauritius</option>
-                  <option class="EU" value="Mayotte">Mayotte</option>
-                  <option class="NA" value="Mexico">Mexico</option>
-                  <option class="OC" value="Micronesia">Micronesia</option>
-                  <option class="EU" value="Moldova">Moldova</option>
-                  <option class="EU" value="Monaco">Monaco</option>
-                  <option class="AS" value="Mongolia">Mongolia</option>
-                  <option class="EU" value="Montenegro">Montenegro</option>
-                  <option class="NA" value="Montserrat">Montserrat</option>
-                  <option class="AF" value="Morocco">Morocco</option>
-                  <option class="AF" value="Mozambique">Mozambique</option>
-                  <option class="AS" value="Myanmar">Myanmar</option>
-                  <option class="AF" value="Namibia">Namibia</option>
-                  <option class="OC" value="Nauru">Nauru</option>
-                  <option class="AS" value="Nepal">Nepal</option>
-                  <option class="EU" value="Netherlands">Netherlands</option>
-                  <option class="NA" value="Netherlands Antilles">Netherlands Antilles</option>
-                  <option class="OC" value="New Caledonia">New Caledonia</option>
-                  <option class="OC" value="New Zealand">New Zealand</option>
-                  <option class="NA" value="Nicaragua">Nicaragua</option>
-                  <option class="AF" value="Niger">Niger</option>
-                  <option class="AF" value="Nigeria">Nigeria</option>
-                  <option class="OC" value="Niue">Niue</option>
-                  <option class="OC" value="Norfolk Island">Norfolk Island</option>
-                  <option class="OC" value="Northern Mariana Islands">Northern Mariana Islands</option>
-                  <option class="EU" value="Norway">Norway</option>
-                  <option class="AS" value="Oman">Oman</option>
-                  <option class="AS" value="Pakistan">Pakistan</option>
-                  <option class="OC" value="Palau">Palau</option>
-                  <option class="AS" value="Palestinian Territory">Palestinian Territory</option>
-                  <option class="NA" value="Panama">Panama</option>
-                  <option class="OC" value="Papua New Guinea">Papua New Guinea</option>
-                  <option class="SA" value="Paraguay">Paraguay</option>
-                  <option class="SA" value="Peru">Peru</option>
-                  <option class="AS" value="Philippines">Philippines</option>
-                  <option class="OC" value="Pitcairn">Pitcairn</option>
-                  <option class="EU" value="Poland">Poland</option>
-                  <option class="EU" value="Portugal">Portugal</option>
-                  <option class="NA" value="Puerto Rico">Puerto Rico</option>
-                  <option class="AS" value="Qatar">Qatar</option>
-                  <option class="AF" value="Reunion">Reunion</option>
-                  <option class="EU" value="Romania">Romania</option>
-                  <option class="EU" value="Russian Federation">Russian Federation</option>
-                  <option class="AF" value="Rwanda">Rwanda</option>
-                  <option class="NA" value="Saint Barthelemy">Saint Barthelemy</option>
-                  <option class="AF" value="Saint Helena">Saint Helena</option>
-                  <option class="NA" value="Saint Kitts And Nevis">Saint Kitts And Nevis</option>
-                  <option class="NA" value="Saint Lucia">Saint Lucia</option>
-                  <option class="NA" value="Saint Martin">Saint Martin</option>
-                  <option class="NA" value="Saint Pierre And Miquelon">Saint Pierre And Miquelon</option>
-                  <option class="NA" value="Saint Vincent And Grenadines">Saint Vincent And Grenadines</option>
-                  <option class="OC" value="Samoa">Samoa</option>
-                  <option class="EU" value="San Marino">San Marino</option>
-                  <option class="AF" value="Sao Tome And Principe">Sao Tome And Principe</option>
-                  <option class="AS" value="Saudi Arabia">Saudi Arabia</option>
-                  <option class="AF" value="Senegal">Senegal</option>
-                  <option class="EU" value="Serbia">Serbia</option>
-                  <option class="AF" value="Seychelles">Seychelles</option>
-                  <option class="AF" value="Sierra Leone">Sierra Leone</option>
-                  <option class="AS" value="Singapore">Singapore</option>
-                  <option class="EU" value="Slovakia">Slovakia</option>
-                  <option class="EU" value="Slovenia">Slovenia</option>
-                  <option class="OC" value="Solomon Islands">Solomon Islands</option>
-                  <option class="AF" value="Somalia">Somalia</option>
-                  <option class="AF" value="South Africa">South Africa</option>
-                  <option class="AN" value="South Georgia">South Georgia</option>
-                  <option class="EU" value="Spain">Spain</option>
-                  <option class="AS" value="Sri Lanka">Sri Lanka</option>
-                  <option class="AF" value="Sudan">Sudan</option>
-                  <option class="SA" value="Suriname">Suriname</option>
-                  <option class="EU" value="Svalbard And Jan Mayden">Svalbard And Jan Mayden</option>
-                  <option class="AF" value="Swaziland">Swaziland</option>
-                  <option class="EU" value="Sweden">Sweden</option>
-                  <option class="EU" value="Switzerland">Switzerland</option>
-                  <option class="AS" value="Syrian Arab Republic">Syrian Arab Republic</option>
-                  <option class="AS" value="Taiwan">Taiwan</option>
-                  <option class="AS" value="Tajikistan">Tajikistan</option>
-                  <option class="AF" value="Tanzania">Tanzania</option>
-                  <option class="AS" value="Thailand">Thailand</option>
-                  <option class="AS" value="Timor-Leste">Timor-Leste</option>
-                  <option class="AF" value="Togo">Togo</option>
-                  <option class="OC" value="Tokelau">Tokelau</option>
-                  <option class="OC" value="Tonga">Tonga</option>
-                  <option class="NA" value="Trinidad And Tobago">Trinidad And Tobago</option>
-                  <option class="AF" value="Tunisia">Tunisia</option>
-                  <option class="EU" value="Turkey">Turkey</option>
-                  <option class="AS" value="Turkmenistan">Turkmenistan</option>
-                  <option class="NA" value="Turks And Caicos Islands">Turks And Caicos Islands</option>
-                  <option class="OC" value="Tuvalu">Tuvalu</option>
-                  <option class="AF" value="Uganda">Uganda</option>
-                  <option class="EU" value="Ukraine">Ukraine</option>
-                  <option class="AS" value="United Arab Emirates">United Arab Emirates</option>
-                  <option class="EU" value="United Kingdom">United Kingdom</option>
-                  <option class="NA" value="United States">United States</option>
-                  <option class="NA" value="United States Outl">United States Outl</option>
-                  <option class="SA" value="Uruguay">Uruguay</option>
-                  <option class="AS" value="Uzbekistan">Uzbekistan</option>
-                  <option class="OC" value="Vanuatu">Vanuatu</option>
-                  <option class="SA" value="Venezuela">Venezuela</option>
-                  <option class="AS" value="Viet Nam">Viet Nam</option>
-                  <option class="NA" value="Virgin Islands, Br">Virgin Islands, Br</option>
-                  <option class="NA" value="Virgin Islands, U.S">Virgin Islands, U.S</option>
-                  <option class="OC" value="Wallis And Futuna">Wallis And Futuna</option>
-                  <option class="AF" value="Western Sahara">Western Sahara</option>
-                  <option class="AS" value="Yemen">Yemen</option>
-                  <option class="AF" value="Zambia">Zambia</option>
-                  <option class="AF" value="Zimbabwe">Zimbabwe</option>
-                </select>
-                <br>
+              <div class="row">
+                <div class="col-md-12">
+          <p>&nbsp;</p>
+                  <button type="submit" class="btn btn-danger" name="button">Generate Checklist</button>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 how">
-              <h4>How will you be travelling?</h4>
-              <div class="btn-group" id="how" data-toggle="buttons">
-                <label class="btn btn-default blue">
-                  <input type="radio" name="mode" value="Plane">Plane
-                </label>
-                <label class="btn btn-default blue">
-                  <input type="radio" name="mode" value="Train">Train
-                </label>
-                <label class="btn btn-default blue">
-                  <input type="radio" name="mode" value="Boat">Boat
-                </label>
-                <label class="btn btn-default blue">
-                  <input type="radio" name="mode" value="Car">Car
-                </label>
-                <label class="btn btn-default blue">
-                  <input type="radio" name="mode" value="Bus">Bus
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 staying">
-              <h4>Where will you be staying?</h4>
-              <div class="btn-group" id="staying" data-toggle="buttons">
-                <label class="btn btn-default blue">
-                  <input type="radio" name="accommodation" value="Hotel">Hotel
-                </label>
-                <label class="btn btn-default blue">
-                  <input type="radio" name="accommodation" value="Hostel/Guesthouse">Hostel/GuestHouse
-                </label>
-                <label class="btn btn-default blue">
-                  <input type="radio" name="accommodation" value="Camping">Camping
-                </label>
-                <label class="btn btn-default blue">
-                  <input type="radio" name="accommodation" value="Friends/Relatives">Friends/Relatives
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 activities">
-              <h4>Planned activities</h4>
-              <div class="btn-group" id="activities" data-toggle="buttons">
-                <label class="btn btn-default blue">
-                  <input type="radio" name="activities" value="Sightseeing">Sightseeing
-                </label>
-                <label class="btn btn-default blue">
-                  <input type="radio" name="activities" value="Outdoor Activities">Outdoor Activities
-                </label>
-                <label class="btn btn-default blue">
-                  <input type="radio" name="activities" value="Dining">Dining
-                </label>
-                <label class="btn btn-default blue">
-                  <input type="radio" name="activities" value="Shopping">Shopping
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <br>
-              <button type="submit" class="btn btn-primary" name="button">Generate Checklist</button>
-            </div>
-          </div>
-        </form>
-      </div>
-
-      <div class="pageTwo">
-        <div class="row">
-          <div class="col-md-12">
-            <h4>This checklist has been generated for:</h4>
-            <p><span id="sentenceUser"></span></p>
-            <button type="button" class="btn btn-primary" id="changeCheck">Change Criterias</button>
-          </div>
-        </div><br>
-        <ul class="nav nav-tabs">
-          <li class="active"><a data-toggle="tab" href="#travel-preparations">Travel Preparations</a></li>
-          <li><a data-toggle="tab" href="#documentMoney">Document, Money</a></li>
-          <li><a data-toggle="tab" href="#packing-list">Packing List</a></li>
-        </ul><br>
-        <div class="tab-content">
-          <div id="travel-preparations" class="tab-pane fade in active">
-            <!-- <div class="row"> -->
-            <div class="col-sm-4" id="travelPrepCheck">
-             <label><h4>Travel Preparation </h4></label>
-             <form class="multiselect-tp">
-               <div id="list-tp">
-                 <label><input type="checkbox" class="default" value=""/><span> Renew/check passport</span></label><br>
-                 <label><input type="checkbox" class="default" value=""/><span> Advise bank of future foreign credit card use</span></label><br>
-                 <label><input type="checkbox" class="default" value=""/><span> Leave itineraries with a relative</span></label><br>
-                 <label><input type="checkbox" class="default" value=""/><span> Setup auto e-mail response</span></label><br>
-                 <label><input type="checkbox" class="default" value=""/><span> Buy/recharge phone card/VOIP account</span></label><br>
-                 <label><input type="checkbox" class="default" value=""/><span> Insurance: Trip cancellation/medical</span></label><br>
-                 <label><input type="checkbox" class="default" value=""/><span> Change money</span></label><br>
-                 <label><input type="checkbox" class="default" value=""/><span> Check local destination weather/news</span></label><br>
-
-                 <label><input type='checkbox' class='custom' value=''/><span id="modeOne">  </span></label><br>
-                 <label><input type='checkbox' class='custom' value=''/><span id="modeTwo"> </span></label><br>
-
-                 <label><input type='checkbox' class='custom' value=''/><span id="accOne"> </span></label><br>
-                 <label><input type='checkbox' class='custom' value=''/><span id="accTwo"> </span></label><br>
-
-                 <label><input type='checkbox' class='custom' value=''/><span> Research surrounding location's unique attributes</span></label><br>
-                 <label><input type='checkbox' class='custom' value=''/><span> Pack appropriate apparel</span></label>
-               </div>
-               <input type="text" class="tp" name="custom" value="">
-               <button type="submit" id="button2">Add</button>
-             </form>
-            </div>
-            <div class="col-sm-4" id="homePrepCheck">
-             <label><h4>Home Preparation </h4></label>
-             <form class="multiselect-hp">
-               <div id="list-hp">
-                <label><input type="checkbox" class="default" value=""/><span> Pay bills/rent/utilities</span></label><br>
-                <label><input type="checkbox" class="default" value=""/><span> Forward or hold mail/newspapers/magazines</span></label><br>
-                <label><input type="checkbox" class="default" value=""/><span> Wash clothing</span></label><br>
-                <label><input type="checkbox" class="default" value=""/><span> Empty fridge of perishables</span></label><br>
-                <label><input type="checkbox" class="default" value=""/><span> Empty trash</span></label><br>
-                <label><input type="checkbox" class="default" value=""/><span> Store valuables in a safe place</span></label><br>
-                <label><input type="checkbox" class="default" value=""/><span> Turn off heater/air conditioner</span></label><br>
-                <label><input type="checkbox" class="default" value=""/><span> Lock all doors and windows</span></label><br>
-              </div>
-              <input type="text" class="hp" name="custom" value="">
-              <button type="submit" id="button2">Add</button>
             </form>
+          </div>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+
+
+<!--begin page two  -->
+
+  <div class="pageTwo">
+    <div id="container2" class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="img/checklist.png" alt="checklist logo" height="90px" />
+          </div>
+          <div class="col-md-10">
+            <h2>Your Personal Checklist for Planning International Trips</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <h3>This checklist has been generated for:</h3>
+          <p><span id="sentenceUser"></span></p>
+        </div>
+        <div class="col-md-3">
+          <p>&nbsp;</p>
+          <button type="button" class="btn btn-danger" id="changeCheck">Change Criteria</button>
+        </div>
+        <p>&nbsp;</p>        <p>&nbsp;</p>
+      </div>
+    </div>
+
+    <div class="backgroundImage">
+      <p>&nbsp;</p>
+    <div id="container2"class="container pageTwoBox">
+
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#travel-preparations">Travel Preparations</a></li>
+        <li><a data-toggle="tab" href="#documentMoney">Document, Money</a></li>
+        <li><a data-toggle="tab" href="#packing-list">Packing List</a></li>
+      </ul><br>
+      <div class="tab-content">
+        <div id="travel-preparations" class="tab-pane fade in active">
+          <!-- <div class="row"> -->
+          <div class="col-md-4" id="travelPrepCheck">
+           <label><h4>Travel Preparation </h4></label>
+           <form class="multiselect-tp">
+             <div id="list-tp">
+               <label><input type="checkbox" class="default" value=""/><span> Renew/check passport</span></label><br>
+               <label><input type="checkbox" class="default" value=""/><span> Advise bank of future foreign credit card use</span></label><br>
+               <label><input type="checkbox" class="default" value=""/><span> Leave itineraries with a relative</span></label><br>
+               <label><input type="checkbox" class="default" value=""/><span> Setup auto e-mail response</span></label><br>
+               <label><input type="checkbox" class="default" value=""/><span> Buy/recharge phone card/VOIP account</span></label><br>
+               <label><input type="checkbox" class="default" value=""/><span> Insurance: Trip cancellation/medical</span></label><br>
+               <label><input type="checkbox" class="default" value=""/><span> Change money</span></label><br>
+               <label><input type="checkbox" class="default" value=""/><span> Check local destination weather/news</span></label><br>
+
+               <label><input type='checkbox' class='custom' value=''/><span id="modeOne">  </span></label><br>
+               <label><input type='checkbox' class='custom' value=''/><span id="modeTwo"> </span></label><br>
+
+               <label><input type='checkbox' class='custom' value=''/><span id="accOne"> </span></label><br>
+               <label><input type='checkbox' class='custom' value=''/><span id="accTwo"> </span></label><br>
+
+               <label><input type='checkbox' class='custom' value=''/><span> Research surrounding location's unique attributes</span></label><br>
+               <label><input type='checkbox' class='custom' value=''/><span> Pack appropriate apparel</span></label>
+             </div>
+             <input type="text" class="tp" name="custom" value="">
+             <button type="submit" id="button2">Add</button>
+           </form>
+          </div>
+          <div class="col-md-3" id="homePrepCheck">
+           <label><h4>Home Preparation </h4></label>
+           <form class="multiselect-hp">
+             <div id="list-hp">
+              <label><input type="checkbox" class="default" value=""/><span> Pay bills/rent/utilities</span></label><br>
+              <label><input type="checkbox" class="default" value=""/><span> Forward or hold mail and subscriptions</span></label><br>
+              <label><input type="checkbox" class="default" value=""/><span> Wash clothing</span></label><br>
+              <label><input type="checkbox" class="default" value=""/><span> Empty fridge of perishables</span></label><br>
+              <label><input type="checkbox" class="default" value=""/><span> Empty trash</span></label><br>
+              <label><input type="checkbox" class="default" value=""/><span> Store valuables in a safe place</span></label><br>
+              <label><input type="checkbox" class="default" value=""/><span> Turn off heater/air conditioner</span></label><br>
+              <label><input type="checkbox" class="default" value=""/><span> Lock all doors and windows</span></label><br>
             </div>
-            <div class="col-sm-3" id="vaccCheck">
-             <label><h4>Vaccination </h4></label>
-             <form class="multiselect-v">
-               <div id="list-v">
-                <label><input type="checkbox" class="default"><span> Diphtheria, tetanus &amp; pertussis *
-  </span></label><br>
-                <label><input type="checkbox" class="default"><span> Hepatitis A, B *</span></label><br>
-                <label><input type="checkbox" class="default"><span> Herpes, human papillomavirus (child only) *</span></label><br>
-                <label><input type="checkbox" class="default"><span> Influenza *</span></label><br>
-                <label><input type="checkbox" class="default"><span> Polio *</span></label><br>
-                <label><input type="checkbox" class="default"><span> Choelra **</span></label><br>
-                <label><input type="checkbox" class="default"><span> Encephalitis</span></label><br>
-                <label><input type="checkbox" class="default"><span> Rabies(choice of vaccination or post exposure)</span></label><br>
-                <label><input type="checkbox" class="default"><span> Yellow Fever **</span></label>
-                <label class="jbe"><input type="checkbox" class="default"><span> Japanese B Encephalitis</span></label>
-                <label class="turb"><input type="checkbox" class="default"><span> Turberculosis (if you are planning on living with local people for three months or more)/span&gt;</span></label>
-                <br><label class="typ"><input type="checkbox" class="default"><span> Typhoid</span></label>
-              </div>
-              <div class="sidenote">
-                <p class="up-to-date">
-                  * check that these vaccinations are up to date.
-                </p>
-                <p class="discuss">
-                  ** discuss with your doctor.
-                </p>
-              </div>
-              <input type="text" class="v" name="custom" value="">
-              <button type="submit" id="button2">Add</button>
+            <input type="text" class="hp" name="custom" value="">
+            <button type="submit" id="button2">Add</button>
+          </form>
+          </div>
+          <div class="col-md-3" id="vaccCheck">
+           <label><h4>Vaccination </h4></label>
+           <form class="multiselect-v">
+             <div id="list-v">
+              <label><input type="checkbox" class="default"><span> Diphtheria, tetanus &amp; pertussis *
+      </span></label><br>
+              <label><input type="checkbox" class="default"><span> Hepatitis A, B *</span></label><br>
+              <label><input type="checkbox" class="default"><span> Herpes, human papillomavirus (child only) *</span></label><br>
+              <label><input type="checkbox" class="default"><span> Influenza *</span></label><br>
+              <label><input type="checkbox" class="default"><span> Polio *</span></label><br>
+              <label><input type="checkbox" class="default"><span> Choelra **</span></label><br>
+              <label><input type="checkbox" class="default"><span> Encephalitis</span></label><br>
+              <label><input type="checkbox" class="default"><span> Rabies(choice of vaccination or post exposure)</span></label><br>
+              <label><input type="checkbox" class="default"><span> Yellow Fever **</span></label>
+              <label class="jbe"><input type="checkbox" class="default"><span> Japanese B Encephalitis</span></label>
+              <label class="turb"><input type="checkbox" class="default"><span> Turberculosis (if you are planning on living with local people for three months or more)/span&gt;</span></label>
+              <br><label class="typ"><input type="checkbox" class="default"><span> Typhoid</span></label>
+            </div>
+            <div class="sidenote">
+              <p class="up-to-date">
+                * check that these vaccinations are up to date.
+              </p>
+              <p class="discuss">
+                ** discuss with your doctor.
+              </p>
+            </div>
+            <input type="text" class="v" name="custom" value="">
+            <button type="submit" id="button2">Add</button>
+            </form>
+          </div>
+          <!-- </div> -->
+        </div>
+        <div id="documentMoney" class="tab-pane fade">
+          <!-- <div class="row"> -->
+            <div class="col-md-4" id="documentCheck">
+             <label><h4>Documents</h4></label>
+             <form class="multiselect-dc">
+                <div id="list-dc">
+                  <label><input type="checkbox" class="default" value=""/><span> Passport</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Visas</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Personal identification</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Drivers license</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Vaccination certificate</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Health insurance documents</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Reservations and itineraries</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Copies of tickets/passport/etc.</span></label><br>
+                </div>
+                <input type="text" class="dc" name="custom" value="">
+                <button type="submit" id="button2">Add</button>
               </form>
             </div>
-            <!-- </div> -->
-          </div>
-          <div id="documentMoney" class="tab-pane fade">
-            <!-- <div class="row"> -->
-              <div class="col-sm-4" id="documentCheck">
-               <label><h4>Documents</h4></label>
-               <form class="multiselect-dc">
-                  <div id="list-dc">
-                    <label><input type="checkbox" class="default" value=""/><span> Passport</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Visas</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Personal identification</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Drivers license</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Vaccination certificate</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Health insurance documents</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Reservations and itineraries</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Copies of tickets/passport/etc.</span></label><br>
-                  </div>
-                  <input type="text" class="dc" name="custom" value="">
-                  <button type="submit" id="button2">Add</button>
-                </form>
-              </div>
-              <div class="col-sm-4" id="moneyCheck">
-               <label><h4>Money</h4></label>
-               <form class="multiselect-mc">
-                  <div id="list-mc">
-                    <label><input type="checkbox" class="default" value=""/><span> Cash (Foreigh and local currency)</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Emergency money</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Credit card/debit card</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Wallet</span></label><br>
-                  </div>
-                  <input type="text" class="mc" name="custom" value="">
-                  <button type="submit" id="button2">Add</button>
-                </form>
-              </div>
-            <!-- </div> -->
-          </div>
-          <div id="packing-list" class="tab-pane fade">
-            <!-- <div class="row"> -->
-              <div class="col-sm-4" id="backPackCheck">
-               <label><h4>Bags, cases, and packing</h4></label>
-               <form class="multiselect-bpc">
-                 <div id="list-bpc">
-                   <label><input type="checkbox" class="default" value=""/><span> Carry-on bag (small back-pack)</span></label><br>
-                   <label><input type="checkbox" class="default" value=""/><span> Backpack/Suitcase</span></label><br>
-                   <label><input type="checkbox" class="default" value=""/><span> Luggage ID tags</span></label><br>
-                   <label><input type="checkbox" class="default" value=""/><span> Luggage locks</span></label><br>
-                   <label><input type="checkbox" class="default" value=""/><span> Mini Sewing kit, scissors</span></label><br>
-                   <label><input type="checkbox" class="default" value=""/><span> First Aid Kit</span></label><br>
-                   <label><input type="checkbox" class="default" value=""/><span> Sleeping bag, pillow, earplugs</span></label><br>
-                   <label><input type="checkbox" class="default" value=""/><span> Phone charger</span></label><br>
-                   <label><input type="checkbox" class="default" value=""/><span> Electric adapter</span></label><br>
-                   <label><input type="checkbox" class="default" value=""/><span> Mosquito repellent and net</span></label><br>
-                 </div>
-                 <input type="text" class="bpc" name="custom" value="">
-                 <button type="submit" id="button2">Add</button>
-                </form>
-              </div>
-              <div class="col-sm-4" id="accessoriesCheck">
-               <label><h4>Accessories and clothing</h4></label>
+            <div class="col-md-4" id="moneyCheck">
+             <label><h4>Money</h4></label>
+             <form class="multiselect-mc">
+                <div id="list-mc">
+                  <label><input type="checkbox" class="default" value=""/><span> Cash (Foreigh and local currency)</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Emergency money</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Credit card/debit card</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Wallet</span></label><br>
+                </div>
+                <input type="text" class="mc" name="custom" value="">
+                <button type="submit" id="button2">Add</button>
+              </form>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div id="packing-list" class="tab-pane fade">
+          <!-- <div class="row"> -->
+            <div class="col-md-4" id="backPackCheck">
+             <label><h4>Bags, cases, and packing</h4></label>
+             <form class="multiselect-bpc">
+                <div id="list-bpc">
+                  <label><input type="checkbox" class="default" value=""/><span> Carry-on bag (small back-pack)</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Backpack/Suitcase</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Luggage ID tags</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Luggage locks</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Mini Sewing kit, scissors</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> First Aid Kit</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Sleeping bag, pillow, earplugs</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Phone charger</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Electric adapter</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Mosquito repellent and net</span></label><br>
+                </div>
+                <input type="text" class="bpc" name="custom" value="">
+                <button type="submit" id="button2">Add</button>
+               </form>
+            </div>
+            <div class="col-md-4" id="accessoriesCheck">
+              <label><h4>Accessories and clothing</h4></label>
                <form class="multiselect-ac">
                  <div id="list-ac">
                    <label><input type="checkbox" class="default" value=""/><span> Belt</span></label><br>
@@ -533,15 +574,19 @@
                    <label><input type="checkbox" class="default" value=""/><span> Shoes</span></label><br>
                    <label><input type="checkbox" class="default" value=""/><span> Watch</span></label><br>
                  </div>
-                 <input type="text" class="ac" name="custom" value="">
-                 <button type="submit" id="button2">Add</button>
-                </form>
-              </div>
-            <!-- </div> -->
+               <input type="text" class="ac" name="custom" value="">
+               <button type="submit" id="button2">Add</button>
+              </form>
+            </div>
+
+
+
+
           </div>
         </div>
       </div>
+      <p>&nbsp;</p>
+      </div>
     </div>
-
   </body>
 </html>
