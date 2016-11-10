@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.1.1.js" type="text/javascript"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Travel Planning</title>
   </head>
   <body>
@@ -367,96 +368,112 @@
             <h4>This checklist has been generated for:</h4>
             <p><span id="sentenceUser"></span></p>
           </div>
-          <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#home">Travel preparations</a></li>
-            <li><a data-toggle="tab" href="#menu1">Documents, money, tickets</a></li>
-            <!-- <li><a data-toggle="tab" href="#menu2">Packing list</a></li> -->
-          </ul>
-          <div class="tab-content">
-            <div id="home" class="tab-pane fade in active">
-              <div class="col-sm-4">
-                <label><h4>Travel Preparation </h4></label>
-                <form class="multiselect">
-                  <label><input type="checkbox" class="default" value=""/><span> Renew/check passport</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Advise bank of future foreign credit card use</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Leave itineraries with a relative</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Setup auto e-mail response</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Buy/recharge phone card/VOIP account</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Insurance: Trip cancellation/medical</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Change money</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Check local destination weather/news</span></label><br>
+        </div><br>
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+          <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+          <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+        </ul><br>
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <!-- <div class="row"> -->
+            <div class="col-sm-4" id="travelPrepCheck">
+             <label><h4>Travel Preparation </h4></label>
+             <div class="multiselect">
+                <label><input type="checkbox" class="default" value=""/><span> Renew/check passport</span></label><br>
+                <label><input type="checkbox" class="default" value=""/><span> Advise bank of future foreign credit card use</span></label><br>
+                <label><input type="checkbox" class="default" value=""/><span> Leave itineraries with a relative</span></label><br>
+                <label><input type="checkbox" class="default" value=""/><span> Setup auto e-mail response</span></label><br>
+                <label><input type="checkbox" class="default" value=""/><span> Buy/recharge phone card/VOIP account</span></label><br>
+                <label><input type="checkbox" class="default" value=""/><span> Insurance: Trip cancellation/medical</span></label><br>
+                <label><input type="checkbox" class="default" value=""/><span> Change money</span></label><br>
+                <label><input type="checkbox" class="default" value=""/><span> Check local destination weather/news</span></label><br>
 
-                  <label><input type='checkbox' class='custom' value=''/><span id="modeOne">  </span></label><br>
-                  <label><input type='checkbox' class='custom' value=''/><span id="modeTwo"> </span></label><br>
+                <label><input type='checkbox' class='custom' value=''/><span id="modeOne">  </span></label><br>
+                <label><input type='checkbox' class='custom' value=''/><span id="modeTwo"> </span></label><br>
 
-                  <label><input type='checkbox' class='custom' value=''/><span id="accOne"> </span></label><br>
-                  <label><input type='checkbox' class='custom' value=''/><span id="accTwo"> </span></label><br>
+                <label><input type='checkbox' class='custom' value=''/><span id="accOne"> </span></label><br>
+                <label><input type='checkbox' class='custom' value=''/><span id="accTwo"> </span></label><br>
 
-                  <label><input type='checkbox' class='custom' value=''/><span id="actOne"> </span></label><br>
-                  <label><input type='checkbox' class='custom' value=''/><span id="actTwo"> </span></label><br>
-
-                  <!-- <div class="add checked">
-                    <label><input type='checkbox' class='custom' value=''/><span> Amy</span></label>
-                    <label><input type='checkbox' class='custom' value=''/><span> James</span></label>
-                  </div> -->
-                  <!-- <div class="add">
-                    <label for="add"></label>
-                    <input type="text" name="custom" value="">
-                    <button type="submit" id="button2">Add</button>
-                  </div> -->
-                </div>
-                </form>
-              <div class="col-sm-4" id="homePrepCheck">
-               <label><h4>Home Preparation </h4></label>
-               <div class="multiselect-hp">
-                  <label><input type="checkbox" class="default" value=""/><span> Pay bills/rent/utilities</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Forward or hold mail/newspapers/magazines</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Wash clothing</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Empty fridge of perishables</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Empty trash</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Store valuables in a safe place</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Turn off heater/air conditioner</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Lock all doors and windows</span></label><br>
-                </div>
-              </div>
-              <div class="col-sm-2" id="vaccCheck">
-               <label><h4>Vaccination: </h4></label>
-               <div class="multiselect-v">
-                  <label><input type="checkbox" class="default" value=""/><span> Hepatitis A</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Yellow fever</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Cholera</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Malaria pills</span></label><br>
-                </div>
+                <label><input type='checkbox' class='custom' value=''/><span id="actOne"> </span></label><br>
+                <label><input type='checkbox' class='custom' value=''/><span id="actTwo"> </span></label><br>
               </div>
             </div>
-            <div id="menu1" class="tab-pane fade">
-              <div class="col-sm-4" id="documnetCheck">
+            <div class="col-sm-4" id="homePrepCheck">
+             <label><h4>Home Preparation </h4></label>
+             <div class="multiselect">
+                <label><input type="checkbox" class="default" value=""/><span> Pay bills/rent/utilities</span></label><br>
+                <label><input type="checkbox" class="default" value=""/><span> Forward or hold mail/newspapers/magazines</span></label><br>
+                <label><input type="checkbox" class="default" value=""/><span> Wash clothing</span></label><br>
+                <label><input type="checkbox" class="default" value=""/><span> Empty fridge of perishables</span></label><br>
+                <label><input type="checkbox" class="default" value=""/><span> Empty trash</span></label><br>
+                <label><input type="checkbox" class="default" value=""/><span> Store valuables in a safe place</span></label><br>
+                <label><input type="checkbox" class="default" value=""/><span> Turn off heater/air conditioner</span></label><br>
+                <label><input type="checkbox" class="default" value=""/><span> Lock all doors and windows</span></label><br>
+              </div>
+            </div>
+            <div class="col-sm-2" id="vaccCheck">
+             <label><h4>Vaccination: </h4></label>
+             <div class="multiselect-v">
+                <label><input type="checkbox" class="default" value=""/><span> Hepatitis A</span></label><br>
+                <label><input type="checkbox" class="default" value=""/><span> Yellow fever</span></label><br>
+                <label><input type="checkbox" class="default" value=""/><span> Cholera</span></label><br>
+                <label><input type="checkbox" class="default" value=""/><span> Malaria pills</span></label><br>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <!-- <div class="row"> -->
+              <div class="col-sm-4" id="documentCheck">
                <label><h4>Documents </h4></label>
-               <div class="multiselect-hp">
+               <div class="multiselect">
                   <label><input type="checkbox" class="default" value=""/><span> Passport</span></label><br>
                   <label><input type="checkbox" class="default" value=""/><span> Visas</span></label><br>
                   <label><input type="checkbox" class="default" value=""/><span> Personal identification</span></label><br>
                   <label><input type="checkbox" class="default" value=""/><span> Drivers license</span></label><br>
                   <label><input type="checkbox" class="default" value=""/><span> Vaccination certificate</span></label><br>
                   <label><input type="checkbox" class="default" value=""/><span> Health insurance documents</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Reservations & itineraries</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Reservations and itineraries</span></label><br>
                   <label><input type="checkbox" class="default" value=""/><span> LCopies of tickets/passport/etc.</span></label><br>
                 </div>
               </div>
               <div class="col-sm-4" id="moneyCheck">
                <label><h4>Money</h4></label>
-               <div class="multiselect-hp">
-                  <label><input type="checkbox" class="default" value=""/><span> Cash (Foreigh & local currency)</span></label><br>
+               <div class="multiselect">
+                  <label><input type="checkbox" class="default" value=""/><span> Cash (Foreigh and local currency)</span></label><br>
                   <label><input type="checkbox" class="default" value=""/><span> Emergency money</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Credit card/debit card</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Wallet</span></label><br>
+                </div>
+              </div>
+            <!-- </div> -->
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <!-- <div class="row"> -->
+              <div class="col-sm-4" id="documentCheck">
+               <label><h4>Accessories</h4></label>
+               <div class="multiselect">
+                  <label><input type="checkbox" class="default" value=""/><span> Passport</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Visas</span></label><br>
                   <label><input type="checkbox" class="default" value=""/><span> Personal identification</span></label><br>
                   <label><input type="checkbox" class="default" value=""/><span> Drivers license</span></label><br>
                   <label><input type="checkbox" class="default" value=""/><span> Vaccination certificate</span></label><br>
                   <label><input type="checkbox" class="default" value=""/><span> Health insurance documents</span></label><br>
-                  <label><input type="checkbox" class="default" value=""/><span> Reservations & itineraries</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Reservations and itineraries</span></label><br>
                   <label><input type="checkbox" class="default" value=""/><span> LCopies of tickets/passport/etc.</span></label><br>
                 </div>
               </div>
-            </div>
+              <div class="col-sm-4" id="moneyCheck">
+               <label><h4>Money</h4></label>
+               <div class="multiselect">
+                  <label><input type="checkbox" class="default" value=""/><span> Cash (Foreigh and local currency)</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Emergency money</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Credit card/debit card</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Wallet</span></label><br>
+                </div>
+              </div>
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -464,13 +481,8 @@
 
 
 
-    </div>
 
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script> -->
   </body>
 </html>
