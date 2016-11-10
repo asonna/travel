@@ -24,42 +24,32 @@ Traveler.prototype.addMode = function() {
 
 Traveler.prototype.addAccom = function() {
   var travelAccomArray = ["Hotel", "Hostel/Guesthouse", "Camping", "Friends/Relatives"];
+  var bookConfirm = " Book at site and confirm check-in time"
+  var convert = " Ask about converters for electronics-voltage and/or plugs"
   for(var i = 0; i < travelAccomArray.length; i++)  {
-    if (this.travelAccom === travelAccomArray[0]) {
-      $("#accOne").text("Hotel hello");
-      $("#accTwo").text("Hotel 2 hello");
-    } else if (this.travelAccom === travelAccomArray[1]) {
-      $("#accOne").text("Hostel hello");
-      $("#accTwo").text("Hostel 2 hello");
+    if (this.travelAccom === travelAccomArray[0] || this.travelAccom === travelAccomArray[1]) {
+      $("#accOne").text(bookConfirm);
+      $("#accTwo").text(convert);
     } else if (this.travelAccom === travelAccomArray[2]) {
-      $("#accOne").text("Camp hello");
-      $("#accTwo").text("Camp 2 hello");
+      $("#accOne").text(bookConfirm);
+      $("#accTwo").text(" Sleeping bag, air mattress & pillow, patch kit");
     } else if (this.travelAccom === travelAccomArray[3]) {
-      $("#accOne").text("Friend hello");
-      $("#accTwo").text("Friend 2 hello");
+      $("#accOne").text(" Confirm time and method of arrival");
+      $("#accTwo").text(" Confirm anticipated sleeping and eating arrangements");
     }
   }
 }
 
-Traveler.prototype.addAct = function() {
-  var travelActArray = ["Sightseeing", "Outdoor Activities", "Dining", "Shopping"];
-  for(var i = 0; i < travelActArray.length; i++)  {
-    if (this.travelAct === travelActArray[0]) {
-      $("#actOne").text("sight hello");
-      $("#actTwo").text("sight 2 hello");
-    } else if (this.travelAct === travelActArray[1]) {
-      $("#actOne").text("outdoor hello");
-      $("#actTwo").text("outdoor 2 hello");
-    } else if (this.travelAct === travelActArray[2]) {
-      $("#actOne").text("dining hello");
-      $("#actTwo").text("dining 2 hello");
-    } else if (this.travelAct === travelActArray[3]) {
-      $("#actOne").text("shop hello");
-      $("#actTwo").text("shop 2 hello");
-    }
-  }
-}
-
+// Travel.prototype.vaccination = function() {
+//
+//   contArray
+//
+//   for(var i=0; i < contArray.length; i++) {
+//     if (this.cont === contArray.length[i]) {
+//       $(".vaccination-hide").show();
+//     }
+//   }
+// }
 
 // Front End
 
@@ -85,39 +75,48 @@ $(document).ready(function() {
 
     newTraveler.addMode();
     newTraveler.addAccom();
-    newTraveler.addAct();
-
 
 
     if(newTraveler.travelerUser.length != 0) {
       $(".pageTwo").show();
     }
 
-
-    console.log(newTraveler.travelerUser);
-    console.log(newTraveler.travelMode);
-    console.log(newTraveler.travelAccom);
-    console.log(newTraveler.travelAct);
-
     $("#sentenceUser").text(newTraveler.travelerUser + " traveling to " + newTraveler.travelPlace +" by "+ newTraveler.travelMode +  ". Accommodation: " + newTraveler.travelAccom + ". Planned activity: " + newTraveler.travelAct);
-  //
-  // });
 
-  // $(function() {
-  //   $("form.multiselect").submit(function(event) {
-  //     event.preventDefault();
-  //     $(".multiselect").append("<label><input type='checkbox' class='custom' value=''/><span> HelloWorld</span></label>");
-  //   });
-  // });
+ });
 
-  // $(function(){
-  //   $('input:checkbox').on('change',function(){
-  //       if($(this).is(':checked')){
-  //           $(this).siblings('span').css('text-decoration','line-through');
-  //       }else{
-  //           $(this).siblings('span').css('text-decoration','none');
-  //       }
-  //     };
-  // };
+ $(function() {
+   $("form.multiselect-tp").submit(function(event) {
+     event.preventDefault();
+     var tpCheckbox = $(".tp").val();
+     $("#list-tp").append("<label><input type='checkbox' class='custom' value=''><span>" + tpCheckbox + "</span></label><br>");
+     $(".tp").val("");
+   });
+ });
+ $(function() {
+   $("form.multiselect-hp").submit(function(event) {
+     event.preventDefault();
+      var hpCheckbox = $(".hp").val();
+     $("#list-hp").append("<label><input type='checkbox' class='custom' value=''/><span>" + hpCheckbox + "</span></label><br>");
+     $(".hp").val("");
+   });
+ });
+  $(function() {
+    $("form.multiselect-v").submit(function(event) {
+      event.preventDefault();
+      var vCheckbox = $(".v").val();
+      $("#list-v").append("<label><input type='checkbox' class='custom' value=''/><span>" + vCheckbox + "</span></label><br>");
+      $(".v").val("");
+    });
+  });
+
+  $(function(){
+    $('input:checkbox').on('change',function(){
+      if($(this).is(':checked')){
+          $(this).siblings('span').css('text-decoration','line-through');
+      }else{
+          $(this).siblings('span').css('text-decoration','none');
+      }
+    });
   });
 });
