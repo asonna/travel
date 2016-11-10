@@ -92,49 +92,49 @@ $(document).ready(function() {
    $("form.multiselect-tp").submit(function(event) {
      event.preventDefault();
      var tpCheckbox = $(".tp").val();
-     $("#list-tp").append("<label><input type='checkbox' class='custom' value=''><span>" + " " + tpCheckbox + "</span></label><br>");
+     $("#list-tp").append("<label class='appendCheckbox'><input type='checkbox' class='custom' value=''><span>" + " " + tpCheckbox + "</span></label><br>");
      $(".tp").val("");
    });
 
    $("form.multiselect-hp").submit(function(event) {
      event.preventDefault();
       var hpCheckbox = $(".hp").val();
-     $("#list-hp").append("<label><input type='checkbox' class='custom' value=''/><span>" + " " + hpCheckbox + "</span></label><br>");
+     $("#list-hp").append("<label class='appendCheckbox'><input type='checkbox' class='custom' value=''/><span>" + " " + hpCheckbox + "</span></label><br>");
      $(".hp").val("");
    });
 
   $("form.multiselect-v").submit(function(event) {
     event.preventDefault();
     var vCheckbox = $(".v").val();
-    $("#list-v").append("<br><label><input type='checkbox' class='custom' value=''/><span>" + " " + vCheckbox + "</span></label>");
+    $("#list-v").append("<br><label class='appendCheckbox'><input type='checkbox' class='custom' value=''/><span>" + " " + vCheckbox + "</span></label>");
     $(".v").val("");
   });
 
   $("form.multiselect-dc").submit(function(event) {
     event.preventDefault();
     var dcCheckbox = $(".dc").val();
-    $("#list-dc").append("<label><input type='checkbox' class='custom' value=''><span>" + " " + dcCheckbox + "</span></label><br>");
+    $("#list-dc").append("<label class='appendCheckbox'><input type='checkbox' class='custom' value=''><span>" + " " + dcCheckbox + "</span></label><br>");
     $(".dc").val("");
   });
 
   $("form.multiselect-mc").submit(function(event) {
     event.preventDefault();
      var mcCheckbox = $(".mc").val();
-    $("#list-mc").append("<label><input type='checkbox' class='custom' value=''/><span>" + " " + mcCheckbox + "</span></label><br>");
+    $("#list-mc").append("<label class='appendCheckbox'><input type='checkbox' class='custom' value=''/><span>" + " " + mcCheckbox + "</span></label><br>");
     $(".mc").val("");
   });
 
   $("form.multiselect-bpc").submit(function(event) {
     event.preventDefault();
     var bpcCheckbox = $(".bpc").val();
-    $("#list-bpc").append("<label><input type='checkbox' class='custom' value=''><span>" + " " + bpcCheckbox + "</span></label><br>");
+    $("#list-bpc").append("<label class='appendCheckbox'><input type='checkbox' class='custom' value=''><span>" + " " + bpcCheckbox + "</span></label><br>");
     $(".bpc").val("");
   });
 
   $("form.multiselect-ac").submit(function(event) {
     event.preventDefault();
      var acCheckbox = $(".ac").val();
-    $("#list-ac").append("<label><input type='checkbox' class='custom' value=''/><span>" + " " + acCheckbox + "</span></label><br>");
+    $("#list-ac").append("<label class='appendCheckbox'><input type='checkbox' class='custom' value=''/><span>" + " " + acCheckbox + "</span></label><br>");
     $(".ac").val("");
   });
 
@@ -149,6 +149,8 @@ $(document).ready(function() {
   });
   $("#changeCheck").click(function(event) {
     $(".pageOne").toggle();
+    $(".pageTwo").toggle();
+    $(".appendCheckbox").hide();
     $("#changeCheck").hide();
   });
 });
