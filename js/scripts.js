@@ -9,7 +9,7 @@ function Traveler(travelPlace, travelMode, travelAccom, travelAct, traveler) {
 
 Traveler.prototype.addMode = function() {
   var checkRoute = " Check route for adverse conditions and closures";
-  var checkTicket = " Reconfirm ticket & check-in procedure with ticket provider";
+  var checkTicket = " Reconfirm ticket/check-in procedure with ticket provider";
   var travelModeArray = ["Plane", "Train", "Boat", "Car", "Bus"];
   for(var i = 0; i < travelModeArray.length; i++)  {
    if (this.travelMode === travelModeArray[3]) {
@@ -25,7 +25,7 @@ Traveler.prototype.addMode = function() {
 Traveler.prototype.addAccom = function() {
   var travelAccomArray = ["Hotel", "Hostel/Guesthouse", "Camping", "Friends/Relatives"];
   var bookConfirm = " Book at site and confirm check-in time"
-  var convert = " Ask about converters for electronics-voltage and/or plugs"
+  var convert = " Ask about electronics-voltage and/or plugs"
   for(var i = 0; i < travelAccomArray.length; i++)  {
     if (this.travelAccom === travelAccomArray[0] || this.travelAccom === travelAccomArray[1]) {
       $("#accOne").text(bookConfirm);
@@ -44,6 +44,7 @@ Traveler.prototype.addAccom = function() {
 $(document).ready(function() {
   $("form#userTravelType").submit(function(event){
     event.preventDefault();
+
 
     var who = $('#who input:checkbox:checked').val();
     var where = $('#where').val();
@@ -84,6 +85,8 @@ $(document).ready(function() {
         $(".pageTwo").show();
         $("#changeCheck").show();
       }
+
+
 
       $("#sentenceUser").text("An " + newTraveler.travelerUser + " traveling to " + newTraveler.travelPlace +" by "+ newTraveler.travelMode +  ". Accommodation: " + newTraveler.travelAccom + ". Planned activity: " + newTraveler.travelAct);
     };
@@ -147,6 +150,8 @@ $(document).ready(function() {
       }
     });
   });
+
+
   $("#changeCheck").click(function(event) {
     $(".pageOne").toggle();
     $(".pageTwo").toggle();
