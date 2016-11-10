@@ -40,24 +40,13 @@ Traveler.prototype.addAccom = function() {
   }
 }
 
-// Travel.prototype.vaccination = function() {
-//
-//   contArray
-//
-//   for(var i=0; i < contArray.length; i++) {
-//     if (this.cont === contArray.length[i]) {
-//       $(".vaccination-hide").show();
-//     }
-//   }
-// }
-
 // Front End
 
 $(document).ready(function() {
   $("form#userTravelType").submit(function(event){
     event.preventDefault();
 
-    // $(".pageOne").hide();
+    $(".pageOne").hide();
 
     var who = $('#who input:checkbox:checked').val();
     var where = $('#where').val();
@@ -72,6 +61,16 @@ $(document).ready(function() {
       newTraveler.travelerUser.push(who);
     });
 
+    var continent = $("option:selected").attr("class");
+    console.log(continent);
+
+    if (continent === "AS") {
+      $(".turb").show();
+      $(".Typhoid").show();
+      $(".jbe").show();
+    } else if (continent === "AF" || continent === "SA" || continent === "OC") {
+      $(".typ").show();
+    }
 
     newTraveler.addMode();
     newTraveler.addAccom();
@@ -105,7 +104,7 @@ $(document).ready(function() {
     $("form.multiselect-v").submit(function(event) {
       event.preventDefault();
       var vCheckbox = $(".v").val();
-      $("#list-v").append("<label><input type='checkbox' class='custom' value=''/><span>" + vCheckbox + "</span></label><br>");
+      $("#list-v").append("<br><label><input type='checkbox' class='custom' value=''/><span>" + vCheckbox + "</span></label><br>");
       $(".v").val("");
     });
   });
