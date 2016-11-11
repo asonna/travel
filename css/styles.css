@@ -7,6 +7,16 @@ a {
   color: white;
 }
 
+
+.container1 {
+  width: 60%;
+}
+
+.container2 {
+  width: 80%;
+}
+
+
 .jumbotron {
   background-color: #99CCCC;
   color: rgba(98,19,19,1);
@@ -18,27 +28,34 @@ a {
      border-top-right-radius: 0;
 }
 
+
+
 .backgroundImage {
   background-image: url("../img/beach.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
+.backgroundImage2 {
+  background-image: url("../img/AT.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 20px;
+}
 
-.pageOneBox {
-  background-color: rgba(255,255,255,0.4);
+.pageBox {
+  background-color: rgba(153,204,204,0.5);
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
   padding-top: 15px;
   border-radius: 6px;
 }
-.pageTwoBox {
-  background-color: rgba(153,204,204,0.6);
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-  padding-top: 15px;
-  border-radius: 6px;
-}
+
 
 .pageOneForm {
   background-color: rgba(255,255,255,1);
@@ -50,9 +67,6 @@ a {
   padding-top: 30px;
 }
 
-.pageTwo {
-  background-color: rgba(255,255,255,1);
-}
 
 .tab-content {
   background-color: rgba(255,255,255,1);
@@ -63,13 +77,11 @@ a {
   width: 60%;
 }
 
-
 .pageTwo {
   display: none;
 }
 
 .outputs {
-  /*display: none;*/
   margin-top: 30px
 }
 
@@ -138,19 +150,16 @@ fieldset[disabled] .btn-danger.focus {
   border-color: #d43f3a;
 }
 
-#container1 {
-  width: 40%;
-}
-
-#container2 {
-  width: 60%;
+#sentenceUser {
+  font-weight: bold;
+  font-size: 14px;
+  font-style: italic;
 }
 
 #output, #travelPrepCheck, #homePrepCheck, #vaccCheck, #documentCheck, #moneyCheck, #backPackCheck, #accessoriesCheck {
   border: 1px solid gray;
   border-radius: 10px;
-  margin: auto;
-  background-color: white;
-  margin-right: 50px;
+  margin: 10px;
   padding-bottom: 10px;
+  background-color: white;
 }

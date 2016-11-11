@@ -8,8 +8,8 @@ function Traveler(travelPlace, travelMode, travelAccom, travelAct, traveler) {
 }
 
 Traveler.prototype.addMode = function() {
-  var checkRoute = "Check route for adverse conditions and closures";
-  var checkTicket = "Reconfirm ticket & check-in procedure with ticket provider";
+  var checkRoute = " Check route for adverse conditions and closures";
+  var checkTicket = " Reconfirm ticket & check-in procedure with ticket provider";
   var travelModeArray = ["Plane", "Train", "Boat", "Car", "Bus"];
   for(var i = 0; i < travelModeArray.length; i++)  {
    if (this.travelMode === travelModeArray[3]) {
