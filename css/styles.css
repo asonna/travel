@@ -38,12 +38,7 @@ a {
   background-size: cover;
 }
 
-.backgroundImage2 {
-  background-image: url("../img/AT.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+#background2 {
   padding: 20px;
 }
 

@@ -70,6 +70,7 @@ $(document).ready(function() {
         $(".turb").show();
         $(".typ").show();
         $(".jbe").show();
+        $("div#background2").css("background-image", "url(img/AS.jpg)");
       } else if (continent === "AF" || continent === "SA" || continent === "OC") {
         $(".typ").show();
       }
@@ -86,6 +87,9 @@ $(document).ready(function() {
       $("#sentenceUser").text(newTraveler.travelerUser + " traveling to " + newTraveler.travelPlace +" by "+ newTraveler.travelMode +  ". Accommodation: " + newTraveler.travelAccom + ". Planned activity: " + newTraveler.travelAct);
     };
   });
+
+
+
 
    $("form.multiselect-tp").submit(function(event) {
      event.preventDefault();
