@@ -71,8 +71,21 @@ $(document).ready(function() {
         $(".typ").show();
         $(".jbe").show();
         $("div#background2").css("background-image", "url(img/AS.jpg)");
-      } else if (continent === "AF" || continent === "SA" || continent === "OC") {
-        $(".typ").show();
+      } else if (continent === "AF") {
+          $(".typ").show();
+          $("div#background2").css("background-image", "url(img/AF.jpg)");
+      } else if (continent === "SA") {
+          $(".typ").show();
+          $("div#background2").css("background-image", "url(img/SA.jpg)");
+      } else if (continent === "OC") {
+          $(".typ").show();
+          $("div#background2").css("background-image", "url(img/OC.jpg)");
+      } else if (continent === "AN") {
+        $("div#background2").css("background-image", "url(img/AN.jpg)");
+      } else if (continent === "EU") {
+        $("div#background2").css("background-image", "url(img/EU.jpg)");
+      } else if (continent === "NA") {
+        $("div#background2").css("background-image", "url(img/NA.jpg)");
       }
 
       newTraveler.addMode();
@@ -85,6 +98,19 @@ $(document).ready(function() {
       }
 
       $("#sentenceUser").text(newTraveler.travelerUser + " traveling to " + newTraveler.travelPlace +" by "+ newTraveler.travelMode +  ". Accommodation: " + newTraveler.travelAccom + ". Planned activity: " + newTraveler.travelAct);
+
+      if (newTraveler.travelPlace === ("Afghanistan" || "Turkey" || "Egypt"  || "Saudi Arabia" || "Syrian Arab Republic" || "Iran" || "Iraq")) {
+        $("div#background2").css("background-image", "url(img/ME.jpg)");
+      } else if (newTraveler.travelPlace === "Japan") {
+        $("div#background2").css("background-image", "url(img/JP.jpg)");
+      } else if (newTraveler.travelPlace === "Korea") {
+        $("div#background2").css("background-image", "url(img/KR.jpg)");
+      } else if (newTraveler.travelPlace === ("Thailand" || "Myanmar" || "Lao")) {
+        $("div#background2").css("background-image", "url(img/TH.jpg)");
+      } else if (newTraveler.travelPlace === "Cameroon") {
+        $("div#background2").css("background-image", "url(img/CR.jpg)");
+      }
+
     };
   });
 

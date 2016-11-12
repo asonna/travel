@@ -3,8 +3,8 @@ body {
 }
 
 a {
-  background-color: green;
-  color: white;
+  background-color: rgba(3,93,86,1);
+  color: rgba(255,255,255,1);
 }
 
 
@@ -18,7 +18,7 @@ a {
 
 
 .jumbotron {
-  background-color: #99CCCC;
+  background-color: rgba(153,204,204,1);
   color: rgba(98,19,19,1);
   -webkit-border-top-left-radius: 0 !important;
   -webkit-border-top-right-radius: 0 !important;
@@ -43,7 +43,7 @@ a {
 }
 
 .pageBox {
-  background-color: rgba(153,204,204,0.5);
+  background-color: rgba(153,204,204,0.8);
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
