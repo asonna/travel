@@ -37,8 +37,8 @@
           </div>
         </div>
       </div>
+
       <div class="backgroundImage">
-        <p>&nbsp;</p>
         <div class="container container1">
           <div class="pageBox">
             <h3>Select from each category below: </h3>
@@ -58,7 +58,6 @@
                         <input type="checkbox" class="pets" value="Pets">Pets
                       </label>
                     </div>
-                    <p>&nbsp;</p>
                   </div>
                 </div>
                 <div class="row">
@@ -160,7 +159,7 @@
                         <option class="AF" value="Guinea-Bissau">Guinea-Bissau</option>
                         <option class="SA" value="Guyana">Guyana</option>
                         <option class="NA" value="Haiti">Haiti</option>
-                        <option class="AN" value="Heard Island & Mcdonald Islands">Heard Island & Mcdonald Islands</option>
+                        <option class="AN" value="Heard Island & Mcdonald Islands">Heard Island &amp; Mcdonald Islands</option>
                         <option class="EU" value="Holy See">Holy See</option>
                         <option class="NA" value="Honduras">Honduras</option>
                         <option class="AS" value="Hong Kong">Hong Kong</option>
@@ -382,7 +381,7 @@
               </div>
               <div class="row">
                 <div class="col-sm-12">
-          <p>&nbsp;</p>
+                <p>&nbsp;</p>
                   <button type="submit" class="btn btn-danger" name="button">Generate Checklist</button>
                 </div>
               </div>
@@ -392,12 +391,11 @@
           <p>&nbsp;</p>
         </div>
       </div>
-    </div>
 
 <!--begin page two  -->
 
   <div class="pageTwo">
-    <div class="container container2">
+    <div id="container2" class="container">
       <div class="jumbotron">
         <div class="row">
           <div class="col-sm-2">
@@ -410,11 +408,8 @@
       </div>
     </div>
 
-
-
     <div id="background2" class="backgroundImage">
-      <p>&nbsp;</p>
-      <div class="container container2 pageBox">
+      <div id="container3" class="container pageBox2">
         <div class="row">
           <div class="col-sm-9">
             <h3>This checklist has been generated for:</h3>
@@ -427,44 +422,40 @@
           <p>&nbsp;</p>        <p>&nbsp;</p>
         </div>
         <div class="row">
-          <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#travel-preparations">Travel Preparations</a></li>
-            <li><a data-toggle="tab" href="#documentMoney">Document, Money</a></li>
-            <li><a data-toggle="tab" href="#packing-list">Packing List</a></li>
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="#travel-preparations" role="tab" data-toggle="tab">Travel Preparations</a></li>
+            <li><a href="#documentMoney" role="tab" data-toggle="tab">Document, Money</a></li>
+            <li><a href="#packing-list" role="tab" data-toggle="tab">Packing List</a></li>
           </ul><br>
           <div class="tab-content">
-            <div id="travel-preparations" class="tab-pane fade in active">
-              <!-- <div class="row"> -->
+            <div class="tab-pane fade active in" id="travel-preparations">
               <div class="col-sm-4" id="travelPrepCheck">
-               <label><h4>Travel Preparation </h4></label>
-               <form class="multiselect-tp">
-                 <div id="list-tp">
-                   <label><input type="checkbox" class="default" value=""/><span> Renew/check passport</span></label><br>
-                   <label><input type="checkbox" class="default" value=""/><span> Advise bank of future foreign credit card use</span></label><br>
-                   <label><input type="checkbox" class="default" value=""/><span> Leave itineraries with a relative</span></label><br>
-                   <label><input type="checkbox" class="default" value=""/><span> Setup auto e-mail response</span></label><br>
-                   <label><input type="checkbox" class="default" value=""/><span> Buy/recharge phone card/VOIP account</span></label><br>
-                   <label><input type="checkbox" class="default" value=""/><span> Insurance: Trip cancellation/medical</span></label><br>
-                   <label><input type="checkbox" class="default" value=""/><span> Change money</span></label><br>
-                   <label><input type="checkbox" class="default" value=""/><span> Check local destination weather/news</span></label><br>
-
-                   <label><input type='checkbox' class='custom' value=''/><span id="modeOne">  </span></label><br>
-                   <label><input type='checkbox' class='custom' value=''/><span id="modeTwo"> </span></label><br>
-
-                   <label><input type='checkbox' class='custom' value=''/><span id="accOne"> </span></label><br>
-                   <label><input type='checkbox' class='custom' value=''/><span id="accTwo"> </span></label><br>
-
-                   <label><input type='checkbox' class='custom' value=''/><span> Research surrounding location's unique attributes</span></label><br>
-                   <label><input type='checkbox' class='custom' value=''/><span> Pack appropriate apparel</span></label>
-                 </div>
-                 <input type="text" class="tp" name="custom" value="">
-                 <button type="submit" id="button2">Add</button>
-               </form>
+                <label><h4>Travel Preparation</h4></label>
+                <form class="multiselect-tp">
+                <div id="list-tp">
+                  <label><input type="checkbox" class="default" value=""/><span> Renew/check passport</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Advise bank of future foreign credit card use</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Leave itineraries with a relative</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Setup auto e-mail response</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Buy/recharge phone card/VOIP account</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Insurance: Trip cancellation/medical</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Change money</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Check local destination weather/news</span></label><br>
+                  <label><input type='checkbox' class='custom' value=''/><span id="modeOne">  </span></label><br>
+                  <label><input type='checkbox' class='custom' value=''/><span id="modeTwo"> </span></label><br>
+                  <label><input type='checkbox' class='custom' value=''/><span id="accOne"> </span></label><br>
+                  <label><input type='checkbox' class='custom' value=''/><span id="accTwo"> </span></label><br>
+                  <label><input type='checkbox' class='custom' value=''/><span> Research surrounding location's unique attributes</span></label><br>
+                  <label><input type='checkbox' class='custom' value=''/><span> Pack appropriate apparel</span></label>
+                </div>
+                <input type="text" class="tp" name="custom" value=""/>
+                <button type="submit" id="button2">Add</button>
+                </form>
               </div>
               <div class="col-sm-3" id="homePrepCheck">
-               <label><h4>Home Preparation </h4></label>
-               <form class="multiselect-hp">
-                 <div id="list-hp">
+                <label><h4>Home Preparation </h4></label>
+                <form class="multiselect-hp">
+                <div id="list-hp">
                   <label><input type="checkbox" class="default" value=""/><span> Pay bills/rent/utilities</span></label><br>
                   <label><input type="checkbox" class="default" value=""/><span> Forward or hold mail and subscriptions</span></label><br>
                   <label><input type="checkbox" class="default" value=""/><span> Wash clothing</span></label><br>
@@ -476,25 +467,24 @@
                 </div>
                 <input type="text" class="hp" name="custom" value="">
                 <button type="submit" id="button2">Add</button>
-              </form>
+                </form>
               </div>
               <div class="col-sm-3" id="vaccCheck">
-               <label><h4>Vaccination </h4></label>
-               <form class="multiselect-v">
-                 <div id="list-v">
-                  <label><input type="checkbox" class="default"><span> Diphtheria, tetanus &amp; pertussis *
-          </span></label><br>
-                  <label><input type="checkbox" class="default"><span> Hepatitis A, B *</span></label><br>
-                  <label><input type="checkbox" class="default"><span> Herpes, human papillomavirus (child only) *</span></label><br>
-                  <label><input type="checkbox" class="default"><span> Influenza *</span></label><br>
-                  <label><input type="checkbox" class="default"><span> Polio *</span></label><br>
-                  <label><input type="checkbox" class="default"><span> Choelra **</span></label><br>
-                  <label><input type="checkbox" class="default"><span> Encephalitis</span></label><br>
-                  <label><input type="checkbox" class="default"><span> Rabies(choice of vaccination or post exposure)</span></label><br>
-                  <label><input type="checkbox" class="default"><span> Yellow Fever **</span></label>
-                  <label class="jbe"><input type="checkbox" class="default"><span> Japanese B Encephalitis</span></label>
-                  <label class="turb"><input type="checkbox" class="default"><span> Turberculosis (if you are planning on living with local people for three months or more)/span&gt;</span></label>
-                  <br><label class="typ"><input type="checkbox" class="default"><span> Typhoid</span></label>
+                <label><h4>Vaccination </h4></label>
+                <form class="multiselect-v">
+                <div id="list-v">
+                    <label><input type="checkbox" class="default"><span> Diphtheria, tetanus &amp; pertussis *</span></label><br>
+                    <label><input type="checkbox" class="default"><span> Hepatitis A, B *</span></label><br>
+                    <label><input type="checkbox" class="default"><span> Herpes, human papillomavirus (child only) *</span></label><br>
+                    <label><input type="checkbox" class="default"><span> Influenza *</span></label><br>
+                    <label><input type="checkbox" class="default"><span> Polio *</span></label><br>
+                    <label><input type="checkbox" class="default"><span> Choelra **</span></label><br>
+                    <label><input type="checkbox" class="default"><span> Encephalitis</span></label><br>
+                    <label><input type="checkbox" class="default"><span> Rabies(choice of vaccination or post exposure)</span></label><br>
+                    <label><input type="checkbox" class="default"><span> Yellow Fever **</span></label>
+                    <label class="jbe"><input type="checkbox" class="default"><span> Japanese B Encephalitis</span></label>
+                    <label class="turb"><input type="checkbox" class="default"><span> Turberculosis (if you are planning on living with local people for three months or more)/span&gt;</span></label>
+                    <br><label class="typ"><input type="checkbox" class="default"><span> Typhoid</span></label>
                 </div>
                 <div class="sidenote">
                   <p class="up-to-date">
@@ -504,92 +494,91 @@
                     ** discuss with your doctor.
                   </p>
                 </div>
-                <input type="text" class="v" name="custom" value="">
+                <input type="text" class="v" name="custom" value=""/>
                 <button type="submit" id="button2">Add</button>
                 </form>
               </div>
             </div>
-            <div id="documentMoney" class="tab-pane fade">
-                <div class="col-sm-4" id="documentCheck">
-                 <label><h4>Documents</h4></label>
-                 <form class="multiselect-dc">
-                    <div id="list-dc">
-                      <label><input type="checkbox" class="default" value=""/><span> Passport</span></label><br>
-                      <label><input type="checkbox" class="default" value=""/><span> Visas</span></label><br>
-                      <label><input type="checkbox" class="default" value=""/><span> Personal identification</span></label><br>
-                      <label><input type="checkbox" class="default" value=""/><span> Drivers license</span></label><br>
-                      <label><input type="checkbox" class="default" value=""/><span> Vaccination certificate</span></label><br>
-                      <label><input type="checkbox" class="default" value=""/><span> Health insurance documents</span></label><br>
-                      <label><input type="checkbox" class="default" value=""/><span> Reservations and itineraries</span></label><br>
-                      <label><input type="checkbox" class="default" value=""/><span> Copies of tickets/passport/etc.</span></label><br>
-                    </div>
-                    <input type="text" class="dc" name="custom" value="">
-                    <button type="submit" id="button2">Add</button>
-                  </form>
+            <div class="tab-pane fade" id="documentMoney">
+              <div class="col-sm-4" id="documentCheck">
+                <label><h4>Documents</h4></label>
+                <form class="multiselect-dc">
+                <div id="list-dc">
+                  <label><input type="checkbox" class="default" value=""/><span> Passport</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Visas</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Personal identification</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Drivers license</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Vaccination certificate</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Health insurance documents</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Reservations and itineraries</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Copies of tickets/passport/etc.</span></label><br>
                 </div>
-                <div class="col-sm-4" id="moneyCheck">
-                 <label><h4>Money</h4></label>
-                 <form class="multiselect-mc">
-                    <div id="list-mc">
-                      <label><input type="checkbox" class="default" value=""/><span> Cash (Foreigh and local currency)</span></label><br>
-                      <label><input type="checkbox" class="default" value=""/><span> Emergency money</span></label><br>
-                      <label><input type="checkbox" class="default" value=""/><span> Credit card/debit card</span></label><br>
-                      <label><input type="checkbox" class="default" value=""/><span> Wallet</span></label><br>
-                    </div>
-                    <input type="text" class="mc" name="custom" value="">
-                    <button type="submit" id="button2">Add</button>
-                  </form>
-                </div>
+                <input type="text" class="dc" name="custom" value=""/>
+                <button type="submit" id="button2">Add</button>
+                </form>
+              </div>
+              <div class="col-sm-4" id="moneyCheck">
+                <label><h4>Money</h4></label>
+                <form class="multiselect-mc">
+                  <div id="list-mc">
+                    <label><input type="checkbox" class="default" value=""/><span> Cash (Foreigh and local currency)</span></label><br>
+                    <label><input type="checkbox" class="default" value=""/><span> Emergency money</span></label><br>
+                    <label><input type="checkbox" class="default" value=""/><span> Credit card/debit card</span></label><br>
+                    <label><input type="checkbox" class="default" value=""/><span> Wallet</span></label><br>
+                 </div>
+                <input type="text" class="mc" name="custom" value="">
+                <button type="submit" id="button2">Add</button>
+                </form>
+              </div>
             </div>
-            <div id="packing-list" class="tab-pane fade">
+            <div class="tab-pane fade" id="packing-list" >
               <div class="col-sm-4" id="backPackCheck">
-               <label><h4>Bags, cases, and packing</h4></label>
-               <form class="multiselect-bpc">
-                  <div id="list-bpc">
-                    <label><input type="checkbox" class="default" value=""/><span> Carry-on bag (small back-pack)</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Backpack/Suitcase</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Luggage ID tags</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Luggage locks</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Mini Sewing kit, scissors</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> First Aid Kit</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Sleeping bag, pillow, earplugs</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Phone charger</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Electric adapter</span></label><br>
-                    <label><input type="checkbox" class="default" value=""/><span> Mosquito repellent and net</span></label><br>
-                  </div>
-                  <input type="text" class="bpc" name="custom" value="">
-                  <button type="submit" id="button2">Add</button>
-                 </form>
+                <label><h4>Bags, cases, and packing</h4></label>
+                <form class="multiselect-bpc">
+                <div id="list-bpc">
+                  <label><input type="checkbox" class="default" value=""/><span> Carry-on bag (small back-pack)</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Backpack/Suitcase</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Luggage ID tags</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Luggage locks</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Mini Sewing kit, scissors</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> First Aid Kit</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Sleeping bag, pillow, earplugs</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Phone charger</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Electric adapter</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Mosquito repellent and net</span></label><br>
+                </div>
+                <input type="text" class="bpc" name="custom" value="">
+                <button type="submit" id="button2">Add</button>
+                </form>
               </div>
               <div class="col-sm-4" id="accessoriesCheck">
                 <label><h4>Accessories and clothing</h4></label>
-                 <form class="multiselect-ac">
-                   <div id="list-ac">
-                     <label><input type="checkbox" class="default" value=""/><span> Belt</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Comb/ Brush</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Shaver, razor or shaving cream</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> afthershave, perfume, deodorant</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Tooth maintenance kit</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Cotton balls</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Soap, shampoo, face wash</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Lotion & facial moisturizer</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Sunscreen, After sun lotion</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Glasses, contact lenses & solution</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Socks</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Sunglasses/case/strap</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Undergarments</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Common clothing</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Jewelries</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Swimsuit</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Jacket</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Pajamas</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Shoes</span></label><br>
-                     <label><input type="checkbox" class="default" value=""/><span> Watch</span></label><br>
-                   </div>
-                   <input type="text" class="ac" name="custom" value="">
-                   <button type="submit" id="button2">Add</button>
-                  </form>
+                <form class="multiselect-ac">
+                <div id="list-ac">
+                  <label><input type="checkbox" class="default" value=""/><span> Belt</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Comb/ Brush</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Shaver, razor or shaving cream</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> afthershave, perfume, deodorant</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Tooth maintenance kit</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Cotton balls</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Soap, shampoo, face wash</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Lotion &amp; facial moisturizer</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Sunscreen, After sun lotion</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Glasses, contact lenses &amp; solution</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Socks</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Sunglasses/case/strap</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Undergarments</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Common clothing</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Jewelries</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Swimsuit</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Jacket</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Pajamas</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Shoes</span></label><br>
+                  <label><input type="checkbox" class="default" value=""/><span> Watch</span></label><br>
                 </div>
+                <input type="text" class="ac" name="custom" value="">
+                <button type="submit" id="button2">Add</button>
+                </form>
               </div>
             </div>
           </div>

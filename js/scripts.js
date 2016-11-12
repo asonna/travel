@@ -114,8 +114,6 @@ $(document).ready(function() {
   });
 
 
-
-
    $("form.multiselect-tp").submit(function(event) {
      event.preventDefault();
      var tpCheckbox = $(".tp").val();
@@ -175,11 +173,11 @@ $(document).ready(function() {
     });
   });
 
-
   $("#changeCheck").click(function(event) {
     $(".pageOne").toggle();
     $(".pageTwo").toggle();
     $("#changeCheck").hide();
     $(".appendCheckbox").hide();
   });
+
 });
