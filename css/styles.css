@@ -7,13 +7,17 @@ a {
   color: rgba(255,255,255,1);
 }
 
-
 .container1 {
   width: 60%;
 }
 
 .container2 {
   width: 80%;
+}
+
+.glyphicon {
+  font-size: 20px;
+  color: rgba(160,170,180,1);
 }
 
 
@@ -26,9 +30,8 @@ a {
      -moz-border-top-right-radius: 0 !important;
      border-top-left-radius: 0;
      border-top-right-radius: 0;
+
 }
-
-
 
 .backgroundImage {
   background-image: url("../img/beach.jpg");

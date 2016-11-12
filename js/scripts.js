@@ -91,7 +91,6 @@ $(document).ready(function() {
       newTraveler.addMode();
       newTraveler.addAccom();
 
-
       if(newTraveler.travelerUser.length != 0) {
         $(".pageTwo").show();
         $("#changeCheck").show();
@@ -175,6 +174,8 @@ $(document).ready(function() {
       }
     });
   });
+
+
   $("#changeCheck").click(function(event) {
     $(".pageOne").toggle();
     $(".pageTwo").toggle();
